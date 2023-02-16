@@ -1,0 +1,26 @@
+/* #navContainer {
+    display: flex;
+    border: 2px solid black;
+} */
+
+/* #navRow {
+    border: 2px solid black;
+    display: flex;
+} */
+
+#navContent {
+    display: flex;
+}
+
+.links {
+    margin: 5px 10px;
+}
+
+#titleLogo {
+    width: 10%;
+    border: 5px solid black;
+}
+
+#hamburgerList {
+    border: 3px solid black;
+}
