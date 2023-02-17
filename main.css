@@ -8,19 +8,37 @@
     display: flex;
 } */
 
-#navContent {
+#navRow {
     display: flex;
 }
 
 .links {
-    margin: 5px 10px;
+    margin: auto 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding: auto 10px;
 }
 
 #titleLogo {
-    width: 10%;
     border: 5px solid black;
+    width: 150px;
+}
+
+.navbar-brand {
+    border: 2px solid black;
+}
+
+#navbarNavAltMarkup {
+    border: 1px solid black;
+    float: right;
 }
 
 #hamburgerList {
     border: 3px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#hamButton {
+    float: right;
 }
