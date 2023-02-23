@@ -1,44 +1,19 @@
-/* #navContainer {
-    display: flex;
-    border: 2px solid black;
-} */
-
-/* #navRow {
-    border: 2px solid black;
-    display: flex;
-} */
-
-#navRow {
-    display: flex;
-}
-
-.links {
-    margin: auto 50px;
-    border: 1px solid black;
-    text-align: center;
-    padding: auto 10px;
-}
-
+/* NAVBAR */
 #titleLogo {
     border: 5px solid black;
-    width: 150px;
+    max-height: 80px;
 }
 
 .navbar-brand {
-    border: 2px solid black;
+    display: inline-block;
 }
 
-#navbarNavAltMarkup {
+.links {
+    margin: auto 10px;
     border: 1px solid black;
-    float: right;
-}
-
-#hamburgerList {
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-}
-
-#hamButton {
-    float: right;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 10px;
+    font-size: calc(10px + 1.05vw);
+    white-space: nowrap;
 }
