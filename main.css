@@ -1,4 +1,28 @@
+/* COLOR OPTIONS */
+/* 
+#abb8c3
+#f78da7 pale-pink
+#cf2e2e vivid-red
+#ff6900 vivid-orange
+#fcb900 vivd-amber
+#7bdcb5 vivd-green-cyan
+#00d084 light-green-cyan
+#8ed1fc pale-cyan-blue
+#0693e3 vivd-cyan-blue
+#9b51e0 vivd-purple
+#0073e6 main-blue
+rgba(0,115,230,0.88)
+linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)
+linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%)
+linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%) 
+*/
+
+
 /* NAVBAR */
+#navMain {
+
+}
+
 
 #titleLogo {
     border: 5px solid black;
@@ -15,6 +39,12 @@
     border-radius: 5px;
     text-align: center;
     padding: 3px 10px;
-    font-size: calc(10px + 1.05vw);
+    font-size: calc(8px + 1.05vw);
     white-space: nowrap;
+    background-color: ;
+}
+
+.links:hover {
+    background-color: white;
+    color: blue;
 }
