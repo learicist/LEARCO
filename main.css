@@ -142,3 +142,15 @@ body {
     margin-left: -82px;
 }
 
+
+
+#footRow {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#footTag {
+    text-align: center;
+}
