@@ -10,7 +10,7 @@ $(document).ready(function() {
         },
         mouseleave: function () {
             if (window.innerWidth >= 581) {
-                $(this).css("background-color", "rgb(255, 255, 255, 0.25)");
+                $(this).css("background-color", "rgb(240, 248, 255, 0.65)");
             }
         }
     });
