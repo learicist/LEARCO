@@ -15,4 +15,32 @@ $(document).ready(function() {
         }
     });
 
+    // PAGE RELOAD ON BRAND
+    $(".navbar-brand").on("click", function () {
+        location.reload();
+    });
+
+    // NAV OPTIONS
+    $(".links").on({
+        click: function() {
+            switch (this.id) {
+                case "bizCapBtn":
+                    $("#mainPage").addClass("hidden");
+                    $("#bizCapPage").removeClass("hidden");
+                    break
+                case "empPayBtn":
+                    $("#mainPage").addClass("hidden");
+                    $("#empPayPage").removeClass("hidden");
+                    break
+                case "rdTaxBtn":
+                    $("#mainPage").addClass("hidden");
+                    $("#rdTaxPage").removeClass("hidden");
+                    break
+            }
+
+            // ...ROTATE THROUGH .PAGETOP CLASS AND ADD HIDDEN, REMOVE FROM CHOSEN
+
+        }
+    });
+
 });

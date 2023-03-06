@@ -31,7 +31,7 @@
 	</head>
 
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navMain">
+        <nav class="navbar navbar-expand-xl fixed-top" id="navMain">
 			<div class="container-fluid" id="navContainer">
                 <a class="navbar-brand" href="#">
                     <img 
@@ -57,7 +57,7 @@
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="bizCapBtn"
                             aria-current="page" 
                             href="#">
                                 Business Capital
@@ -65,42 +65,42 @@
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="empPayBtn"
                             href="#">
                                 Employee Pay Anyday
                         </a>
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="rdTaxBtn"
                             href="#">
                                 R & D Tax Credit
                         </a>
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="assetBtn"
                             href="#">
                                 Asset Backed
                         </a>
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="ertcBtn"
                             href="#">
                                 Employee Retention Tax Credit
                         </a>
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="payProcessBtn"
                             href="#">
                                 Payment Processing
                         </a>
                         <a 
                             style="text-decoration: none;" 
                             class="active links" 
-                            id=""
+                            id="equipFinBtn"
                             href="#">
                                 Equipment Financing
                         </a>
@@ -109,12 +109,12 @@
 			</div> <!-- navContainer -->
 		</nav>
 
-        <div class="container-fluid pageTop">
-            <div class="row" id="topRow">
-                <div class="col-md-12" id="topDiv">
-                    <div id="mainPageHero">
+        <div class="container-fluid pageTop" id="mainPage">
+            <div class="row topRow" id="topRowMain">
+                <div class="col-md-12 topDiv" id="topDivMain">
+                    <div class="heroDiv">
                         <div class="row heroTextRow">
-                            <div class="heroTextDiv col-md-8">
+                            <div class="heroTextDiv col-md-8" id="mainPageHero">
                                 <h2 class="heroText">Learco Business Services</h2>
                                 <br>
                                 <h5>Welcome to my digital office, let's find out how I can best help you.</h5>
@@ -124,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="row" id="secondRow">
+            <div class="row secondRow" id="secondRowMain">
                 <div class="col-md-4" id="headshotDiv">
                     <img src="https://res.cloudinary.com/learicist/image/upload/v1677372755/LEARCO/Learco_headshot.jpg" id="headshot"/>
                 </div>
@@ -135,9 +135,100 @@
                     </h3>
                 </div>
             </div>
+            <!-- END SECOND ROW MAIN -->
 
+            <div class="row thirdRow" id="thirdRowMain">
+                <div class="col-md-8 formDiv" id="formDivMain">
+                    <ul id="contactMainPage" class="contactForms">
+                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                            <li>
+                                <input class="textbox" type="text" name="Name" placeholder="Name" required/>
+                            </li>
+                            <li>
+                                <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
+                            </li>
+                            <li>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                            </li>
+                            <li>
+                                <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
+                            </li>
+                            <button class="send" name="sendBtn" type="submit">Send</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <!-- END THIRD ROW MAIN -->
+        </div>
+        <!-- END MAIN PAGE -->
+
+        <div class="container-fluid pageTop hidden" id="bizCapPage">
+            <div class="row topRow" id="topRowBiz">
+                <div class="col-md-12 topDiv" id="topDivBiz">
+                    <div class="heroDiv">
+                        <div class="row heroTextRow">
+                            <div class="heroTextDiv col-md-8" id="bizPageHero">
+                                <h2 class="heroText">Business Capital</h2>
+                                <br>
+                                <h3>We can help you get funding for your business when the banks can't</h3>
+                                <br>
+                                <h5>One of the main services we offer, Business Capital is...</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TOPDIV -->
+            </div>
+            <!-- END TOPROW -->
+
+            <div class="row secondRow" id="secondRowBiz">
+                <div class="col-md-2 boxes bizCapBoxes">
+                    <p class="boxTops">Quick and Painless</p>
+                    <br>
+                    <p>The application process is BARELY AN INCONVENIENCE and you'll hear back within 0.4 seconds!</p>
+                </div>
+                <div class="col-md-2 boxes bizCapBoxes bizCapBoxAlt">
+                    <p class="boxTops">We take all comers!</p>
+                    <br>
+                    <p>Serving a wide range of business sizes, we can help you secure anywhere from $2,000 to $2M!</p>
+                </div>
+                <div class="col-md-2 boxes bizCapBoxes">
+                    <p class="boxTops">Keep what you own</p>
+                    <br>
+                    <p>Our Business Capital funding takes place without any collateral on your end, so you only stand to gain!</p>
+                </div>
+                <div class="col-md-2 boxes bizCapBoxes bizCapBoxAlt">
+                    <p class="boxTops">What are you waiting for?</p>
+                    <br>
+                    <p>Reach out now below, and let's get you up and running today!</p>
+                </div>
+            </div>
+            <!-- END SECOND ROW BIZ -->
+            <div class="row thirdRow" id="thirdRowBiz">
+                <div class="col-md-8 formDiv" id="formDivBiz">
+                    <ul id="contactBizPage" class="contactForms">
+                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                            <li>
+                                <input class="textbox" type="text" name="Name" placeholder="Name" required/>
+                            </li>
+                            <li>
+                                <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
+                            </li>
+                            <li>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                            </li>
+                            <li>
+                                <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
+                            </li>
+                            <button class="send" name="sendBtn" type="submit">Send</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <!-- END THIRD ROW MAIN -->
 
         </div>
+        <!-- END BIZ CAP PAGE -->
 
         <script src="main.js"></script>
     </body>
@@ -146,7 +237,7 @@
 
 
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid" id="footBox">
             <div class="row" id="footRow">
                 <div class="col-md-4" id="footTag">
                     <a 
