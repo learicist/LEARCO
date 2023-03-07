@@ -77,7 +77,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 115, 230, 0.78);
+    background-color: rgb(0, 115, 230, 0.68);
 }
 
 .heroTextRow {
@@ -124,6 +124,16 @@ body {
     width: 30vw;
     height: 6vh;
     text-align: center;
+}
+
+.fourthRow {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.legalText {
+    font-size: calc(6px + 0.35vw);
 }
 
 /* FIRST ROW MAIN PAGE */
@@ -190,9 +200,12 @@ body {
     text-align: center;
     border: 1px solid black;
     box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.45);
-    padding-top: 10px;
+}
+
+.bizCapBoxes {
     margin: auto 10px;
     min-height: 30vh;
+    padding-top: 15px;
 }
 
 .bizCapBoxAlt {
@@ -200,8 +213,60 @@ body {
 }
 
 
+/* EMP PAY ANYDAY PAGE */
+#topDivEmpPay {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372765/LEARCO/Diverse7.jpg");
+}
+
+#empPayPageHero {
+    margin-top: 22vh;
+}
+
+#empPayDiv {
+    border: 1px solid black;
+    background-color: rgb(0, 208, 132, 0.95);
+    display: block;
+    text-align: center;
+    margin-top: -10vh;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.45);
+}
+
+#handOutIcon {
+    font-size: calc(12px + 2.6vw);
+    margin: 15px auto;
+    border: 1px solid black;
+    display: inline-block;
+}
 
 
+/* R&D TAX PAGE */
+#topDivRdTax {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372761/LEARCO/Diverse1.jpg");
+}
+
+#rdTaxPageHero {
+    margin-top: 15vh;
+}
+
+.rdTaxBoxes {
+    margin: 15px 5px;
+    padding-bottom: 15px;
+}
+
+.rdTaxIcons {
+    margin-top: 5vh;
+    font-size: calc(12px + 2vw);
+}
+
+#rdTaxDescriptor {
+    display: block;
+    align-items: center;
+    border: 1px solid black;
+    margin: 15px auto;
+    background-color: rgb(155, 81, 224, 0.8);
+}
 
 
 
@@ -219,9 +284,13 @@ body {
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    
+    background-color: rgb(252, 185, 0, 0.85);
 }
 
 #footTag {
     text-align: center;
+}
+
+#learicist {
+    color: black;
 }

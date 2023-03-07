@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#navMain').on({
         mouseenter: function () {
             if (window.innerWidth >= 581) {
-                $(this).css("background-color", "rgba(0, 115, 230, 0.40)");
+                $(this).css("background-color", "rgb(252, 185, 0, 0.65)");
                 //$(".links").css("color", "white");
             }             
         },
@@ -25,21 +25,34 @@ $(document).ready(function() {
         click: function() {
             switch (this.id) {
                 case "bizCapBtn":
-                    $("#mainPage").addClass("hidden");
+                    $(".pageTop").addClass("hidden");
                     $("#bizCapPage").removeClass("hidden");
                     break
                 case "empPayBtn":
-                    $("#mainPage").addClass("hidden");
+                    $(".pageTop").addClass("hidden");
                     $("#empPayPage").removeClass("hidden");
                     break
                 case "rdTaxBtn":
-                    $("#mainPage").addClass("hidden");
+                    $(".pageTop").addClass("hidden");
                     $("#rdTaxPage").removeClass("hidden");
                     break
+                case "assetBtn":
+                    $(".pageTop").addClass("hidden");
+                    $("#assetPage").removeClass("hidden");
+                    break
+                case "ertcBtn":
+                    $(".pageTop").addClass("hidden");
+                    $("#ertcPage").removeClass("hidden");
+                    break
+                case "payProcess":
+                    $(".pageTop").addClass("hidden");
+                    $("#payProcessPage").removeClass("hidden");
+                    break
+                case "equipFinBtn":
+                    $(".pageTop").addClass("hidden");
+                    $("#equipFinPage").removeClass("hidden");
+                    break
             }
-
-            // ...ROTATE THROUGH .PAGETOP CLASS AND ADD HIDDEN, REMOVE FROM CHOSEN
-
         }
     });
 
