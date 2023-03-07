@@ -44,7 +44,7 @@ $(document).ready(function() {
                     $(".pageTop").addClass("hidden");
                     $("#ertcPage").removeClass("hidden");
                     break
-                case "payProcess":
+                case "payProcessBtn":
                     $(".pageTop").addClass("hidden");
                     $("#payProcessPage").removeClass("hidden");
                     break

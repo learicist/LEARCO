@@ -102,6 +102,12 @@ body {
     justify-content: center;
 }
 
+.boxes {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.45);
+}
 
 .thirdRow {
     display: flex;
@@ -196,20 +202,17 @@ body {
     margin-top: 15vh;
 }
 
-.boxes {
-    text-align: center;
-    border: 1px solid black;
-    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.45);
-}
-
 .bizCapBoxes {
     margin: auto 10px;
     min-height: 30vh;
     padding-top: 15px;
+    color: white;
+    font-size: calc(10px + 0.4vw);
 }
 
 .bizCapBoxAlt {
     margin-top: 50px;
+    background-color: #f78da7;
 }
 
 
@@ -236,7 +239,7 @@ body {
 #handOutIcon {
     font-size: calc(12px + 2.6vw);
     margin: 15px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
 }
 
@@ -269,8 +272,40 @@ body {
 }
 
 
+/* ASSET BACKED PAGE */
+#topDivAsset {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372737/LEARCO/Diverse3.jpg");
+}
 
+#assetPageHero {
+    margin-top: 15vh;
+}
 
+#assetDescriptor {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.assetBoxes {
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    padding: 10px auto;
+}
+
+.assetIconDiv {
+    margin: 20px auto;
+}
+
+.assetIcons {
+    font-size: calc(12px + 3vw);
+}
+
+.assetDescriptors {
+    font-size: calc(12px + 1.6vw);
+}
 
 
 
