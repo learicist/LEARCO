@@ -308,6 +308,43 @@ body {
 }
 
 
+/* ERTC PAGE */
+#topDivErtc {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372780/LEARCO/Diverse4.jpg");
+}
+
+#ertcPageHero {
+    margin-top: 16vh;
+}
+
+#ertcDescriptorDiv {
+    text-align: center;
+    background-color: #f78da7;
+}
+
+#ertcDescriptorTitle {
+    margin-top: 25px;
+}
+
+#ertcDescriptorsRow {
+    margin: 30px auto;
+}
+
+.ertcDescriptorDivs {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ertcDescriptors {
+    /* border: 1px solid black; */
+    font-size: calc(12px + 1vw);
+    margin: 35px auto;
+}
+
+
+
 
 /* FOOTER ALL PAGES */
 /* #footBox {
