@@ -60,9 +60,9 @@ $(document).ready(function() {
         }
     });
 
-    $(".links").css({
-        if (($"#"))
-        "margin": "10px 0",
-    })
+    // $(".links").css({
+    //     // if (($"#"))
+    //     "margin": "10px 0",
+    // });
 
 });
