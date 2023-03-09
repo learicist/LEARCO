@@ -364,6 +364,23 @@ body {
     width: 80%;
 }
 
+
+/* EQUIP FIN PAGE */
+#topDivEquipFin {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1678323642/LEARCO/equip3.jpg");
+}
+
+#equipFinPageHero {
+    margin-top: 22vh;
+}
+
+.equipFinDescriptorDivs {
+    text-align: center;
+}
+
+
+
+
 /* FOOTER ALL PAGES */
 /* #footBox {
 
