@@ -52,8 +52,17 @@ $(document).ready(function() {
                     $(".pageTop").addClass("hidden");
                     $("#equipFinPage").removeClass("hidden");
                     break
+                case "bizConsultBtn":
+                    $(".pageTop").addClass("hidden");
+                    $("#bizConsultPage").removeClass("hidden");
+                    break
             }
         }
     });
+
+    $(".links").css({
+        if (($"#"))
+        "margin": "10px 0",
+    })
 
 });

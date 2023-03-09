@@ -310,16 +310,17 @@ body {
 
 /* ERTC PAGE */
 #topDivErtc {
-    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372780/LEARCO/Diverse4.jpg");
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1678301246/LEARCO/Diverse4.jpg");
 }
 
 #ertcPageHero {
-    margin-top: 16vh;
+    margin-top: 12vh;
 }
 
 #ertcDescriptorDiv {
     text-align: center;
     background-color: #f78da7;
+    border-radius: 5px;
 }
 
 #ertcDescriptorTitle {
@@ -345,6 +346,23 @@ body {
 
 
 
+/* PAYMENT PROCESSING PAGE */
+#topDivPayProcess {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1678301248/LEARCO/Diverse5.jpg");
+}
+
+#payProcessPageHero {
+    margin-top: 24vh;
+}
+
+#payProcessDealDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#payProcessDescriptorPic {
+    width: 80%;
+}
 
 /* FOOTER ALL PAGES */
 /* #footBox {
