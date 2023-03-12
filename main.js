@@ -27,42 +27,71 @@ $(document).ready(function() {
                 case "bizCapBtn":
                     $(".pageTop").addClass("hidden");
                     $("#bizCapPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "empPayBtn":
                     $(".pageTop").addClass("hidden");
                     $("#empPayPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "rdTaxBtn":
                     $(".pageTop").addClass("hidden");
                     $("#rdTaxPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "assetBtn":
                     $(".pageTop").addClass("hidden");
                     $("#assetPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "ertcBtn":
                     $(".pageTop").addClass("hidden");
                     $("#ertcPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "payProcessBtn":
                     $(".pageTop").addClass("hidden");
                     $("#payProcessPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "equipFinBtn":
                     $(".pageTop").addClass("hidden");
                     $("#equipFinPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
                 case "bizConsultBtn":
                     $(".pageTop").addClass("hidden");
                     $("#bizConsultPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
                     break
             }
         }
     });
 
-    // $(".links").css({
-    //     // if (($"#"))
-    //     "margin": "10px 0",
-    // });
+    //COLLAPSE MENU WHEN USER CLICKS ON PAGE BODY
+    $(".pageTop").on({
+        click: function () {
+            if ($("#hamButton").attr("aria-expanded") === "true") {
+                $("#hamButton").trigger("click");
+            }
+        }
+    });
+    
 
 });
