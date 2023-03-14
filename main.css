@@ -421,6 +421,12 @@ h3 {
     margin-top: 15vh;
 }
 
+#bizConsultDescriptorDiv {
+    background-color: #f78da7;
+    border-radius: 5px;
+    padding: 30px 5px;
+    text-align: center;
+}
 
 
 /* FOOTER ALL PAGES */
