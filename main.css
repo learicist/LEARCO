@@ -85,6 +85,9 @@ body {
     height: 70vh;
     position: relative;
     background-size: 100vw 70vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .heroDiv {
