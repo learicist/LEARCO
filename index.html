@@ -35,7 +35,7 @@
 	</head>
 
     <body>
-        <nav class="navbar navbar-expand-xl fixed-top" id="navMain">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navMain">
 			<div class="container-fluid" id="navContainer">
                 <a class="navbar-brand" href="#">
                     <img 
@@ -60,7 +60,7 @@
                     <div class="navbar-nav ms-auto" id="hamburgerList">
                         <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="active links visibleLinks" 
                             id="bizCapBtn"
                             aria-current="page" 
                             href="#">
@@ -68,53 +68,111 @@
                         </a>
                         <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="active links visibleLinks" 
                             id="empPayBtn"
                             href="#">
                                 Employee Pay Anyday
                         </a>
                         <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="active links visibleLinks" 
                             id="rdTaxBtn"
                             href="#">
                                 R & D Tax Credit
                         </a>
-                        <a 
+
+                        <a
+                            style="text-decoration: none;" 
+                            class="active links visibleLinks dropdown-toggle" 
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            id="dropdownCtrl"
+                            href="#">
+                                More 
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end" id="dropdownMenu">
+                            <li class="dropdownLinks">
+                                <a 
+                                    style="text-decoration: none;"
+                                    class="active links dropdownLinks dropdown-item" 
+                                    id="assetBtn"
+                                    href="#">
+                                        Asset Backed
+                                </a>
+                            </li>
+                            <li class="dropdownLinks">
+                                <a 
+                                    style="text-decoration: none;"
+                                    class="active links dropdownLinks dropdown-item" 
+                                    href="#"
+                                    id="ertcBtn">
+                                        Employee Retention Tax Credit
+                                </a>
+                            </li>
+                            <li class="dropdownLinks">
+                                <a 
+                                    style="text-decoration: none;"
+                                    class="active links dropdownLinks dropdown-item" 
+                                    href="#"
+                                    id="payProcessBtn">
+                                        Payment Processing
+                                </a>
+                            </li>
+                            <li class="dropdownLinks">
+                                <a 
+                                    style="text-decoration: none;"
+                                    class="active links dropdownLinks dropdown-item" 
+                                    href="#"
+                                    id="equipFinBtn">
+                                        Equipment Financing
+                                </a>
+                            </li>
+                            <li class="dropdownLinks">
+                                <a 
+                                    style="text-decoration: none;"
+                                    class="active links dropdownLinks dropdown-item" 
+                                    href="#"
+                                    id="bizConsultBtn">
+                                        Business Consulting
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <a 
                             style="text-decoration: none;" 
                             class="active links" 
                             id="assetBtn"
                             href="#">
                                 Asset Backed
-                        </a>
-                        <a 
+                        </a> -->
+                        <!-- <a 
                             style="text-decoration: none;" 
                             class="active links" 
                             id="ertcBtn"
                             href="#">
                                 Employee Retention Tax Credit
-                        </a>
-                        <a 
+                        </a> -->
+                        <!-- <a 
                             style="text-decoration: none;" 
                             class="active links" 
                             id="payProcessBtn"
                             href="#">
                                 Payment Processing
-                        </a>
-                        <a 
+                        </a> -->
+                        <!-- <a 
                             style="text-decoration: none;" 
                             class="active links" 
                             id="equipFinBtn"
                             href="#">
                                 Equipment Financing
-                        </a>
-                        <a 
+                        </a> -->
+                        <!-- <a 
                             style="text-decoration: none;" 
                             class="active links" 
                             id="bizConsultBtn"
                             href="#">
                                 Business Consulting
-                        </a>
+                        </a> -->
                     </div> 
                     <!-- hamburgerList -->
                 </div> 
@@ -143,10 +201,10 @@
                     <img src="https://res.cloudinary.com/learicist/image/upload/v1677372755/LEARCO/Learco_headshot.jpg" id="headshot"/>
                 </div>
                 <div class="col-md-8" id="welcomeMsgDiv">
-                    <h3 id="welcomeMsg">There are many ways/services I have available to people at all levels of ...
+                    <h4 id="welcomeMsg">There are many ways/services I have available to people at all levels of ...
                         <br>
                         Here at LBS we can find a solution tailored to your situation and needs that will ...
-                    </h3>
+                    </h4>
                 </div>
             </div>
             <!-- END SECOND ROW MAIN -->
@@ -163,7 +221,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -236,7 +294,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -267,7 +325,7 @@
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="empPayPageHero">
-                                <h2 class="heroText">Now you can step up for your employees the way they do for you.</h2>
+                                <h2 class="heroText">Step up for your employees the way they do for you.</h2>
                                 <br>
                                 <h3>Your employee's paycheck belongs to them. Let us help you get it to them when they need it, at no risk or cost to you.</h3>
                             </div>
@@ -300,7 +358,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -392,7 +450,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -463,7 +521,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -535,7 +593,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -596,7 +654,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
@@ -689,7 +747,7 @@
                                 <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
                             </li>
                             <li>
-                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number (optional)"/>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
                             </li>
                             <li>
                                 <textarea class="textbox messagebox" name="Message" type="text" placeholder="Message" required></textarea>
