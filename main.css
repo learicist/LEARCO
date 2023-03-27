@@ -543,7 +543,8 @@ h3 {
 #thirdRowBizConsult {
     text-align: center;
     margin: 25px auto;
-    background-color: #cf2e2e;
+    background-color: #0073e6;
+    color: white;
 }
 
 #fourthRowBizConsult {
@@ -557,7 +558,8 @@ h3 {
     justify-content: center;
     text-align: center;
     margin: 25px auto;
-    background-color: #cf2e2e;
+    background-color: #0073e6;
+    color: white;
 }
 
 /* FOOTER ALL PAGES */
