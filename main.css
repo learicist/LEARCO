@@ -215,6 +215,11 @@ h3 {
     font-size: calc(6px + 0.35vw);
 }
 
+.sixthRow {
+    display: flex;
+    justify-content: center;
+}
+
 /* FIRST ROW MAIN PAGE */
 #topDivMain {
     background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372730/LEARCO/Diverse2.jpg");
@@ -545,12 +550,16 @@ h3 {
     margin: 25px auto;
     background-color: #0073e6;
     color: white;
+    padding: 25px 0px;
+    border-radius: 5px;
 }
 
 #fourthRowBizConsult {
     text-align: center;
     margin: 25px auto;
     background-color: aliceblue;
+    padding: 25px 0px;
+    border-radius: 5px;
 }
 
 #fifthRowBizConsult {
@@ -560,6 +569,8 @@ h3 {
     margin: 25px auto;
     background-color: #0073e6;
     color: white;
+    padding: 25px 0px;
+    border-radius: 5px;
 }
 
 /* FOOTER ALL PAGES */
