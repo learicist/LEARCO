@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#navMain').on({
         mouseenter: function () {
             if (window.innerWidth >= 581) {
-                $(this).css("background-color", "rgb(123, 220, 181, 0.65)");
+                $(this).css("background-color", "rgb(25, 178, 80, 0.85)");
                 //$(".links").css("color", "white");
             }             
         },
