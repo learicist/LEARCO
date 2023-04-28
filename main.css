@@ -148,7 +148,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 160, 223, 0.68);
+    background-color: rgb(0, 160, 223, 0.58);
     border-radius: 5px;
 }
 
@@ -197,6 +197,7 @@ h3 {
 
 .formTitle {
     font-size: calc(12px + 1.4vw);
+    font-family: "Poppins", sans-serif;
 }
 
 .formDiv {
@@ -218,11 +219,13 @@ h3 {
 
 .textbox[placeholder] {
     font-size: calc(10px + 0.6vw);
+    font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 670px) {
     .textbox[placeholder] {
         font-size: calc(10px + 0.8vw);
+        font-family: "Poppins", sans-serif;
     }
 }
 
@@ -235,6 +238,7 @@ h3 {
     color: rgb(0, 160, 223);
     font-size: calc(12px + 0.7vw);
     border-radius: 5px;
+    font-family: "Averia Libre", cursive;
 }
 
 .fourthRow {
@@ -278,9 +282,10 @@ h3 {
 	background: #0c3b5d;
 	border-radius: .4em;
     text-align: center;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    padding: 3% 3%;
 }
     
 #welcomeMsgDiv:after {
@@ -299,11 +304,18 @@ h3 {
 }
 
 #welcomeMsg {
-    font-size: calc(12px + 1.4vw);
+    font-size: calc(12px + 1.6vw);
+    font-family: "Averia Libre", cursive;
+    color: white;
+    /* margin-top: 4%;  */
+}
+
+#welcomeMsg2 {
+    font-size: calc(10px + 1.1vw);
     font-family: "Poppins", sans-serif;
     color: white;
-    
 }
+
 
 @media screen and (max-width: 1000px) {
     #welcomeMsgDiv:after {
@@ -362,22 +374,42 @@ h3 {
     margin-top: 15vh;
 }
 
+.boxTops {
+    font-family: "Averia Libre", cursive;
+    font-size: calc(10px + 0.7vw);
+}
+
+.boxText {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 0.5vw);
+}
+
 .bizCapBoxes {
     margin: 5px 10px auto 10px;
-    min-height: 30vh;
+    min-height: 40vh;
     padding-top: 15px;
     color: white;
-    font-size: calc(10px + 0.4vw);
+    padding-top: 25px;
 }
 
 .bizCapBoxAlt {
     margin-top: 50px;
-    background-color: #f78da7;
+    padding-top: 55px;
+    background-color: rgb(12, 59, 93);
+    /* padding-bottom: 15px; */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768.8px) {
     .bizCapBoxes {
         margin-top: 15px;
+    }
+
+    .boxTops {
+        font-size: calc(12px + 1.2vw);
+    }
+
+    .boxText {
+        font-size: calc(10px + 1.5vw);
     }
 
 }
@@ -411,12 +443,21 @@ h3 {
 }
 
 #handOutIcon {
-    font-size: calc(12px + 2.6vw);
+    font-size: calc(12px + 2.5vw);
     margin: 15px auto;
     /* border: 1px solid black; */
     display: inline-block;
 }
 
+#empPayAboutTitle {
+    font-family: "Averia Libre", cursive;
+    font-size: calc(12px + 1.9vw);
+}
+
+#empPayAbout {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(12px + 0.75vw);
+}
 
 /* R&D TAX PAGE */
 #topDivRdTax {
@@ -430,10 +471,27 @@ h3 {
 .rdTaxBoxes {
     margin: 15px 5px;
     padding-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: calc(11px + 0.8vw);
+}
+
+#rdTaxBox1 {
+    background-color: rgb(33, 94, 172);
+    color: white;
+}
+
+#rdTaxBox2 {
+    background-color: rgb(25, 178, 80);
+    font-weight: 600;
+}
+
+#rdTaxBox3 {
+    background-color: rgb(33, 94, 172);
+    color: white;
 }
 
 .rdTaxIcons {
-    margin-top: 5vh;
+    margin: 5vh auto 2vh auto;
     font-size: calc(12px + 2vw);
 }
 
@@ -444,8 +502,24 @@ h3 {
     padding: 25px;
     border-radius: 5px;
     margin: 15px auto;
-    background-color: rgb(155, 81, 224, 0.8);
+    background-color: rgb(12, 59, 93);
+    color: white;
     font-size: calc(12px + 1.2vw);
+}
+
+#rdTaxDescriptorTitle {
+    text-align: center;
+    font-family: "Averia Libre", cursive;
+    font-size: calc(12px + 1.8vw);
+}
+
+#rdTaxDescriptorList {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(12px + 0.8vw);
+}
+
+#rdTaxDescriptorList li {
+    margin: 15px auto;
 }
 
 
@@ -466,10 +540,11 @@ h3 {
 
 .assetBoxes {
     text-align: center;
-    background-color: aliceblue;
-    border: 1px solid aliceblue;
-    border-radius: 5px;
+    background-color: rgb(25, 178, 80);
+    border: 1px solid rgb(25, 178, 80);
+    /* Border Radius, Font Size, and Font Family handled inline HTML because unique needs here */
     padding: 10px auto;
+    color: rgb(12, 59, 93);
 }
 
 .assetIconDiv {
@@ -481,7 +556,7 @@ h3 {
 }
 
 .assetDescriptors {
-    font-size: calc(12px + 1.6vw);
+    /* font-size: calc(12px + 1.6vw); */
 }
 
 
@@ -628,4 +703,5 @@ h3 {
 
 #learicist {
     color: black;
+    font-family: "Poppins", sans-serif;
 }
