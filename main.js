@@ -3,13 +3,13 @@ $(document).ready(function() {
     // MOUSEENTER NAV EFFECTS
     $('#navMain').on({
         mouseenter: function () {
-            if (window.innerWidth >= 581) {
+            if (window.innerWidth >= 700) {
                 $(this).css("background-color", "rgb(25, 178, 80, 0.85)");
                 //$(".links").css("color", "white");
             }             
         },
         mouseleave: function () {
-            if (window.innerWidth >= 581) {
+            if (window.innerWidth >= 700) {
                 $(this).css("background-color", "rgb(240, 248, 255, 0.65)");
             }
         }

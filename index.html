@@ -139,41 +139,44 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- <a 
+
+                        <!-- HIDDEN BUTTONS TO BE REVEALED ON MOBILE -->
+
+                        <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="links mobileLinks" 
                             id="assetBtn"
                             href="#">
                                 Asset Backed
-                        </a> -->
-                        <!-- <a 
+                        </a>
+                        <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="links mobileLinks" 
                             id="ertcBtn"
                             href="#">
                                 Employee Retention Tax Credit
-                        </a> -->
-                        <!-- <a 
+                        </a>
+                        <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="links mobileLinks" 
                             id="payProcessBtn"
                             href="#">
                                 Payment Processing
-                        </a> -->
-                        <!-- <a 
+                        </a>
+                        <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="links mobileLinks" 
                             id="equipFinBtn"
                             href="#">
                                 Equipment Financing
-                        </a> -->
-                        <!-- <a 
+                        </a>
+                        <a 
                             style="text-decoration: none;" 
-                            class="active links" 
+                            class="links mobileLinks" 
                             id="bizConsultBtn"
                             href="#">
                                 Business Consulting
-                        </a> -->
+                        </a>
                     </div> 
                     <!-- hamburgerList -->
                 </div> 
@@ -215,7 +218,7 @@
                 <div class="col-md-8 formDiv" id="formDivMain">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactMainPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -288,7 +291,7 @@
                 <div class="col-md-8 formDiv" id="formDivBiz">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactBizPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -352,7 +355,7 @@
                 <div class="col-md-8 formDiv" id="formDivEmpPay">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactEmpPayPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -444,7 +447,7 @@
                 <div class="col-md-8 formDiv" id="formDivRdTax">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactRdTaxPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -515,7 +518,7 @@
                 <div class="col-md-8 formDiv" id="formDivAsset">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactAssetPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -587,7 +590,7 @@
                 <div class="col-md-8 formDiv" id="formDivErtc">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactErtcPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -632,7 +635,7 @@
             <!-- END TOPROW -->
 
             <div class="row secondRow" id="secondRowPayProcess">
-                <div class="col-md-8" id="payProcessDealDiv">
+                <div class="col-md-10" id="payProcessDealDiv">
                     <div class="" id="payProcessDescriptorDiv">
                         <h2>Guaranteed funding offer matching!</h2>
                         <br>
@@ -649,7 +652,7 @@
                 <div class="col-md-8 formDiv" id="formDivPayProcess">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactPayProcessPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -702,47 +705,53 @@
             <!-- END TOPROW -->
 
             <div class="row secondRow" id="secondRowEquipFin">
-                <div class="col-md-3 equipFinDescriptorDivs">
+                <div class="col-md-6 equipFinDescriptorDivs" id="topEquipFinDescriptor">
                     <p>Offering 24 - 72 month terms <br></p>
                     <p>Automatic Monthly Payments, set it and forget it! <br></p>
                     <p>Quick and painless application process</p>
                 </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-3 equipFinDescriptorDivs">
-                            <div class="equipFinIconDivs">
-                                <i class="fa-solid fa-suitcase-medical equipFinIcons"></i>
-                            </div>
-                            <p>Medical Equipment</p>
-                        </div>
-                        <div class="col-md-3 equipFinDescriptorDivs">
-                            <div class="equipFinIconDivs">
-                                <i class="fa-solid fa-wrench equipFinIcons"></i>
-                            </div>
-                            <p>Construction Equipment</p>
-                        </div>
-                        <div class="col-md-3 equipFinDescriptorDivs">
-                            <div class="equipFinIconDivs">
-                                <i class="fa-solid fa-utensils equipFinIcons"></i>
-                            </div>
-                            <p>Restaurant Equipment</p>
-                        </div>
-                        <div class="col-md-3 equipFinDescriptorDivs">
-                            <div class="equipFinIconDivs">
-                                <i class="fa-solid fa-plus equipFinIcons"></i>
-                            </div>
-                            <p>And much more! Reach out below to learn if your business qualifies.</p>
-                        </div>
+            </div>
+
+            <!-- END SECONDROW EQUIPFIN -->
+
+            <div class="row thirdRow" id="thirdRowEquipFin">  
+                <div class="col-md-3 equipFinDescriptorDivs middleEquipFinDescriptors">
+                    <div class="equipFinIconDivs">
+                        <i class="fa-solid fa-suitcase-medical equipFinIcons"></i>
                     </div>
+                    <p>Medical Equipment</p>
+                </div>
+                <div class="col-md-3 equipFinDescriptorDivs middleEquipFinDescriptors">
+                    <div class="equipFinIconDivs">
+                        <i class="fa-solid fa-wrench equipFinIcons"></i>
+                    </div>
+                    <p>Construction Equipment</p>
+                </div>
+                <div class="col-md-3 equipFinDescriptorDivs middleEquipFinDescriptors">
+                    <div class="equipFinIconDivs">
+                        <i class="fa-solid fa-utensils equipFinIcons"></i>
+                    </div>
+                    <p>Restaurant Equipment</p>
                 </div>
             </div>
-            <!-- END SECOND ROW EQUIP FIN -->
 
-            <div class="row thirdRow" id="thirdRowEquipFin">
+            <!-- END THIRDROW EQUIPFIN -->
+
+            <div class="row fourthRow" id="fourthRowEquipFin">
+                <div class="col-md-6 equipFinDescriptorDivs" id="bottomEquipFinDescriptor">
+                    <div class="equipFinIconDivs">
+                        <i class="fa-solid fa-plus equipFinIcons"></i>
+                    </div>
+                    <p>And much more! Reach out below to learn if your business qualifies.</p>
+                </div>
+            </div>
+            <!-- END FOURTHROW EQUIPFIN -->
+
+            <div class="row fifthRow" id="fifthRowEquipFin">
                 <div class="col-md-8 formDiv" id="formDivEquipFin">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactEquipFinPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
@@ -761,7 +770,7 @@
                 </div>
                 <!-- END FORM DIV EQUIP FIN -->
             </div>
-            <!-- END THIRD ROW EQUIP FIN -->
+            <!-- END FIFTHROW EQUIPFIN -->
         </div>
         <!-- END EQUIP FIN PAGE -->
 
@@ -894,7 +903,7 @@
                 <div class="col-md-8 formDiv" id="formDivBizConsult">
                     <p class="formTitle">Reach out now, and let's get you up and running today!</p>
                     <ul id="contactBizConsultPage" class="contactForms">
-                        <form action="https://formspree.io/f/mgebydjq" method="POST">
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
                             <li>
                                 <input class="textbox" type="text" name="Name" placeholder="Name" required/>
                             </li>
