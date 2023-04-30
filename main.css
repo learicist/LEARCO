@@ -223,6 +223,12 @@ h3 {
     margin: 50px auto;
 }
 
+.seventhRow {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
 .boxes {
     text-align: center;
     border: 1px solid black;
@@ -257,15 +263,17 @@ h3 {
 .formTitle {
     font-size: calc(12px + 1.4vw);
     font-family: "Poppins", sans-serif;
-    margin: auto 15px;
+    margin: auto 15px 25px 15px;
 }
 
 .textbox {
     margin: 10px auto;
     width: 35vw;
-    height: 6vh;
+    height: 7vh;
     text-align: center;
     border-radius: 5px;
+    font-size: calc(10px + 0.6vw);
+    font-family: "Poppins", sans-serif;
 }
 
 .textbox[placeholder] {
@@ -285,15 +293,17 @@ h3 {
 }
 
 .messageBox {
-
+    padding: 15px 2px;
+    height: 14vh;
 }
 
 .send {
     background-color: white;
     color: rgb(0, 160, 223);
-    font-size: calc(12px + 0.7vw);
+    font-size: calc(12px + 0.9vw);
     border-radius: 5px;
     font-family: "Averia Libre", cursive;
+    margin-top: 15px;;
 }
 
 .legalText {
@@ -543,7 +553,7 @@ h3 {
     align-items: center;
     /* border: 1px solid black; */
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 15px auto;
     background-color: rgb(12, 59, 93);
     color: white;
@@ -650,6 +660,7 @@ h3 {
     background-color: rgb(12, 59, 93);
     border-radius: 5px;
     color: white;
+    padding-bottom: 25px;
 }
 
 #ertcDescriptorTitle {
@@ -796,40 +807,127 @@ h3 {
     margin-top: 15vh;
 }
 
-#bizConsultDescriptorDiv {
-    background-color: #f78da7;
+.bizConsultRow {
+    margin-top: 90px;
+}
+
+.bizConsultDescriptorDiv {
     border-radius: 5px;
     padding: 30px 5px;
     text-align: center;
 }
 
-#thirdRowBizConsult {
-    text-align: center;
-    margin: 25px auto;
-    background-color: #0073e6;
+#bizConsultDescriptorDiv1 {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(12, 59, 93);
     color: white;
-    padding: 25px 0px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 20px;
 }
 
-#fourthRowBizConsult {
-    text-align: center;
-    margin: 25px auto;
-    background-color: aliceblue;
-    padding: 25px 0px;
-    border-radius: 5px;
+#thirdRowBizConsult div {
+    margin: auto;
+    background-color: rgb(25, 178, 80);
+    color: rgb(12, 59, 93);
+    padding: 15px 25px;
 }
 
-#fifthRowBizConsult {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 25px auto;
-    background-color: #0073e6;
-    color: white;
-    padding: 25px 0px;
-    border-radius: 5px;
+#thirdRowBizConsult div h2 {
+    font-family: "Averia Libre", cursive;
 }
+
+#thirdRowBizConsult div p {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 0.6vw);
+}
+
+#fourthRowBizConsult div {
+    margin: auto;   
+}
+
+#bizConsultDescriptorDiv4 {
+    background-color: rgb(33, 94, 172);
+    color: white;
+    padding: 20px;
+}
+
+#bizConsultDescriptorDiv4 h2 {
+    text-align: center;
+    font-family: "Averia Libre", cursive;
+}
+
+#bizConsultDescriptorDiv4 ul {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+
+#bizConsultDescriptorDiv4 ul li {
+    margin: 5px auto;
+}
+
+#bizConsultDescriptorDiv5 {
+    background-color: rgb(33, 94, 172);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#bizConsultDescriptorDiv5 h2 {
+    font-family: "Averia Libre", cursive;
+    margin-bottom: 10px;
+}
+
+#bizConsultDescriptorDiv5 p {
+    font-family: "Poppins", sans-serif ;
+}
+
+#bizCon5-1 {
+    text-align: center;
+    font-size: calc(10px + 0.5vw);
+}
+
+#bizCon5-2 {
+    text-align: justify;
+    font-size: calc(10px + 0.4vw);
+}
+
+#bizCon5-3 {
+    text-align: center;
+    font-size: calc(10px + 0.5vw);
+}
+
+#bizConsultDescriptorDiv6 {
+    background-color: rgb(25, 178, 80);
+    color: rgb(12, 59, 93);
+    padding: 20px;
+}
+
+#bizConsultDescriptorDiv6 h2 {
+    font-family: "Averia Libre", cursive;
+    font-size: calc(10px + 1.2vw);
+}
+
+#bizConsultDescriptorDiv6 p {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 0.6vw);
+}
+
+#bizConsultDescriptorDiv7 {
+    background-color: rgb(12, 59, 93);
+    color: white;
+    padding: 20px;
+}
+
+#bizConsultDescriptorDiv7 h2 {
+    font-family: "Averia Libre", cursive;
+}
+
+#bizConsultDescriptorDiv7 p {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 0.6vw);
+}
+
 
 /* FOOTER ALL PAGES */
 /* #footBox {
