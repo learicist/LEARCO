@@ -452,7 +452,7 @@ h3 {
     /* padding-bottom: 15px; */
 }
 
-@media screen and (max-width: 768.8px) {
+@media screen and (max-width: 767.8px) {
     .bizCapBoxes {
         margin-top: 15px;
     }
@@ -535,6 +535,7 @@ h3 {
 
 #rdTaxBox2 {
     background-color: rgb(25, 178, 80);
+    color: rgb(12, 59, 93);
     font-weight: 600;
 }
 
@@ -609,16 +610,19 @@ h3 {
 #assBox1 {
     border-radius: 5px 0px 0px 5px; 
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 #assBox2 {
     border-radius: 0px; 
     font-family: 'Averia Libre', cursive;
+    color: white;
 }
 
 #assBox3 {
     border-radius: 0px 5px 5px 0px; 
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 720px) {
@@ -684,6 +688,8 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 160, 223);
+    color: rgb(12, 59, 93);
+    font-weight: 600;
 }
 
 .ertcDescriptors {
@@ -730,11 +736,15 @@ h3 {
     width: 85%;
 }
 
-@media screen and (max-width: 1000px) {
-    /* #payProcessDescriptorPic {
-        width: 100%;
-        
-    } */
+@media screen and (max-width: 550px) {
+    #payProcessDealDiv {
+        display: block;
+    }
+
+    #payProcessDescriptorPic {
+        width: 65%;
+        margin-top: 30px;
+    }
 }
 
 
@@ -815,6 +825,13 @@ h3 {
     border-radius: 5px;
     padding: 30px 5px;
     text-align: center;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .bizConsultDescriptorDiv {
+        margin: 15px auto;
+    }
 }
 
 #bizConsultDescriptorDiv1 {
@@ -830,6 +847,7 @@ h3 {
     background-color: rgb(25, 178, 80);
     color: rgb(12, 59, 93);
     padding: 15px 25px;
+    border-radius: 15px;
 }
 
 #thirdRowBizConsult div h2 {
@@ -900,7 +918,8 @@ h3 {
 #bizConsultDescriptorDiv6 {
     background-color: rgb(25, 178, 80);
     color: rgb(12, 59, 93);
-    padding: 20px;
+    padding: 30px 20px;
+    border-radius: 15px;
 }
 
 #bizConsultDescriptorDiv6 h2 {
