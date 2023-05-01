@@ -845,6 +845,11 @@ h3 {
     color: white;
     padding: 25px;
     border-radius: 20px;
+    text-align: center;
+}
+
+#bizConsultDescriptorDiv1 p {
+    margin: 10px auto;
 }
 
 #thirdRowBizConsult div {
