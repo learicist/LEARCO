@@ -818,6 +818,10 @@ h3 {
     margin-top: 15vh;
 }
 
+#bizConsultPageHero h5 {
+    font-family: "Poppins", sans-serif;
+}
+
 .bizConsultRow {
     margin-top: 90px;
 }
