@@ -45,16 +45,16 @@
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	</head>
 
-    
-
     <body>
+        <div id="wrapper"> <!--THIS ONLY EXISTS FOR OVERFLOW REASONS, SO ANNOYING -->
+
         <nav class="navbar navbar-expand-lg fixed-top" id="navMain">
 			<div class="container-fluid" id="navContainer">
                 <a class="navbar-brand" href="#">
                     <img 
                         id="titleLogo"
                         alt="brandLogo"
-                        src="https://res.cloudinary.com/learicist/image/upload/v1682538697/LEARCO/temp_logo.png"/>
+                        src="https://res.cloudinary.com/learicist/image/upload/v1683147007/LEARCO/temp_logo.png"/>
                 </a>
 						
                 <button 
@@ -199,13 +199,13 @@
 
         <div class="container-fluid pageTop" id="mainPage">
             <div class="row topRow" id="topRowMain">
-                <div class="col-md-12 topDiv" id="topDivMain">
+                <div class="col-md-12 topDiv" id="topDivMain" alt="People around conference table">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="mainPageHero">
                                 <h2 class="heroText">Learco Business Services</h2>
                                 <br>
-                                <h3>Welcome to my digital office, let's find out how I can best help you.</h3>
+                                <h3>Delivering Revenue Based Working Capital in 3 days or less!</h3>
                             </div>
                         </div>
                     </div>
@@ -214,14 +214,19 @@
 
             <div class="row secondRow" id="secondRowMain">
                 <div class="col-md-4" id="headshotDiv">
-                    <img src="https://res.cloudinary.com/learicist/image/upload/v1677372755/LEARCO/Learco_headshot.jpg" id="headshot"/>
+                    <img  
+                        id="headshot"
+                        alt="Headshot of business founder"
+                        src="https://res.cloudinary.com/learicist/image/upload/v1677372755/LEARCO/Learco_headshot.jpg"/>
                 </div>
                 <div class="col-md-8" id="welcomeMsgDiv">
                     <h4 id="welcomeMsg">There are many tools that we have available to help business owners to scale their business.
                         <br><br>
                     </h4>
-                    <h4 id="welcomeMsg2">Here at LBS, we can find a solution tailored to your situation to help you grow and expand.
+                    <h4 id="welcomeMsg2">Here at Learco Business Services, we can find a solution tailored to your situation to help you grow and expand.
                     </h4>
+                    <br>
+                    <h4 style="text-align: right;"><strong>Michael Leary - Founder</strong></h4>
                 </div>
             </div>
             <!-- END SECOND ROW MAIN -->
@@ -258,7 +263,7 @@
 
         <div class="container-fluid pageTop hidden" id="bizCapPage">
             <div class="row topRow" id="topRowBiz">
-                <div class="col-md-12 topDiv" id="topDivBiz">
+                <div class="col-md-12 topDiv" id="topDivBiz" alt="One man showing another a laptop">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="bizPageHero">
@@ -338,7 +343,7 @@
 
         <div class="container-fluid pageTop hidden" id="empPayPage">
             <div class="row topRow" id="topRowEmpPay">
-                <div class="col-md-12 topDiv" id="topDivEmpPay">
+                <div class="col-md-12 topDiv" id="topDivEmpPay" alt="Two men talking at a table together">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="empPayPageHero">
@@ -395,7 +400,7 @@
 
         <div class="container-fluid pageTop hidden" id="rdTaxPage">
             <div class="row topRow" id="topRowrdTax">
-                <div class="col-md-12 topDiv" id="topDivRdTax">
+                <div class="col-md-12 topDiv" id="topDivRdTax" alt="Two women chatting in a windowsill seat">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="rdTaxPageHero">
@@ -487,7 +492,7 @@
 
         <div class="container-fluid pageTop hidden" id="assetPage">
             <div class="row topRow" id="topRowAsset">
-                <div class="col-md-12 topDiv" id="topDivAsset">
+                <div class="col-md-12 topDiv" id="topDivAsset" alt="Lady observing a man take notes">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="assetPageHero">
@@ -559,7 +564,7 @@
 
         <div class="container-fluid pageTop hidden" id="ertcPage">
             <div class="row topRow" id="topRowErtc">
-                <div class="col-md-12 topDiv" id="topDivErtc">
+                <div class="col-md-12 topDiv" id="topDivErtc" alt="Diverse woman interacting around a conference table">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="ertcPageHero">
@@ -631,7 +636,7 @@
 
         <div class="container-fluid pageTop hidden" id="payProcessPage">
             <div class="row topRow" id="topRowPayProcess">
-                <div class="col-md-12 topDiv" id="topDivPayProcess">
+                <div class="col-md-12 topDiv" id="topDivPayProcess" alt="One man showing his phone to another in an office">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="payProcessPageHero">
@@ -654,7 +659,10 @@
                         <h5>If you can secure an offer elsewhere that we are unable to match or exceed, you get $250!**</h5>
                     </div>
                     <div class="" id="payProcessDescriptorPicDiv">
-                        <img id="payProcessDescriptorPic" src="https://res.cloudinary.com/learicist/image/upload/v1678305048/LEARCO/250-gift-card.png"/>
+                        <img 
+                            id="payProcessDescriptorPic" 
+                            alt="Image of gift card received from deal"
+                            src="https://res.cloudinary.com/learicist/image/upload/v1678305048/LEARCO/250-gift-card.png"/>
                     </div>
                 </div>
             </div>
@@ -701,7 +709,7 @@
         
         <div class="container-fluid pageTop hidden" id="equipFinPage">
             <div class="row topRow" id="topRowEquipFin">
-                <div class="col-md-12 topDiv" id="topDivEquipFin">
+                <div class="col-md-12 topDiv" id="topDivEquipFin" alt="Riding lawnmower sat outside next to a barn">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="equipFinPageHero">
@@ -794,7 +802,7 @@
 
         <div class="container-fluid pageTop hidden" id="bizConsultPage">
             <div class="row topRow" id="topRowBizConsult">
-                <div class="col-md-12 topDiv" id="topDivBizConsult">
+                <div class="col-md-12 topDiv" id="topDivBizConsult" alt="Two women discussing something at a table">
                     <div class="heroDiv">
                         <div class="row heroTextRow">
                             <div class="heroTextDiv col-md-10" id="bizConsultPageHero">
@@ -949,7 +957,7 @@
 
         </div>
 
-
+    </div>
 
         <script src="main.js"></script>
     </body>
@@ -957,7 +965,11 @@
 
     <footer>
         <div class="container-fluid" id="footBox">
-            <div class="row" id="footRow">
+            <div class="row" id="footRow1">
+                <!-- https://www.facebook.com/search/top?q=learcobusinessservices -->
+            </div>
+
+            <div class="row" id="footRow2">
                 <div class="col-md-4" id="footTag">
                     <a 
 						target="_blank" 
