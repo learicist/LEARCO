@@ -147,7 +147,7 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
     }
 
     #hamButton {
-        border: 3px solid rgb(25, 178, 80, 0.85);
+        border: 3px solid rgb(12, 59, 93, 0.85);
     }
 
     #hamButton:focus {
@@ -157,7 +157,7 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
 
     #spanIcon {
         background-image: url(
-        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(25, 178, 80)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(12, 59, 93)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
 
     #hamburgerList {
