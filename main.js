@@ -84,6 +84,76 @@ $(document).ready(function() {
         }
     });
 
+    //HANLDE BEHAVIOR FOR NAV LINKS IN FOOTER
+    $(".footNavLinks").on({
+        click: function () {
+            switch (this.id) {
+                case "footBizCon":
+                    $(".pageTop").addClass("hidden");
+                    $("#bizConsultPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
+                    break
+                case "footEquipFin":
+                    $(".pageTop").addClass("hidden");
+                    $("#equipFinPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
+                    break
+                case "footAssBack":
+                    $(".pageTop").addClass("hidden");
+                    $("#assetPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
+                    break
+                case "footERTC":
+                    $(".pageTop").addClass("hidden");
+                    $("#ertcPage").removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
+                    break
+            }
+        }
+    });
+
+    $(".footNavContactLinks").on({
+        mouseover: function () {
+            switch (this.id) {
+                case "footNavPhoneLink":
+                    $(this).html("917-443-7934");
+                    break
+                case "footNavEmailLink":
+                    $(this).html("michael" + "<br>" + "@learcobusinessservices" + "<br>" + ".com");
+                    $(this).css({
+                        fontSize: "calc(10px + 0.6vw)",
+                        // marginLeft: "-20px"
+                    });
+                    break
+                case "footNavTextLink":
+                    $(this).html("917-443-7934");
+                    break
+            }
+        },
+        mouseout: function () {
+            switch (this.id) {
+                case "footNavPhoneLink":
+                    $(this).html("Phone Call");
+                    break
+                case "footNavEmailLink":
+                    $(this).html("Email");
+                    $(this).css("font-size", "calc(10px + 0.8vw)");
+                    break
+                case "footNavTextLink":
+                    $(this).html("Text Message");
+                    break
+            }
+        }
+    });
+
     //COLLAPSE MENU WHEN USER CLICKS ON PAGE BODY
     $(".pageTop").on({
         click: function () {

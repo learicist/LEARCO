@@ -251,35 +251,41 @@ h3 {
     margin: 50px auto;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
 }
 
 .thirdRow {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px auto;
 }
 
 .fourthRow {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px auto;
 }
 
 .fifthRow {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px auto;
 }
 
 .sixthRow {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px auto;
 }
 
 .seventhRow {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px auto;
 }
 
@@ -292,7 +298,7 @@ h3 {
 
 .formDiv {
     border-radius: 5px;
-    background-color: rgb(0, 160, 223, 0.8);
+    background-color: rgb(0, 160, 223);
     text-align: center;
     margin: 25px;
     padding: 30px 0px 20px 0px;
@@ -374,17 +380,81 @@ h3 {
 }
 
 /* SECOND ROW MAIN PAGE */
+#secondRowMain {
+    margin: 75px auto;
+}
+
+#servicesDivTitle {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+#toolTitle {
+    font-family: "Averia Libre", cursive;
+    font-size: calc(12px + 1.8vw);
+}
+
+#welcomeMsg {
+    font-size: calc(10px + 1vw);
+    font-family: "Poppins", sans-serif;
+}
+
+.toolsDiv {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.toolsIcons {
+    font-size: calc(12px + 2vw);
+    margin: 15px auto;
+    color: rgb(25, 178, 80);
+}
+
+.toolsDivTitles {
+    font-size: calc(10px + 0.7vw);
+}
+
+@media screen and (max-width: 761.5px) {
+    #toolTitle {
+        font-size: calc(12px + 2.4vw);
+    }
+
+    #welcomeMsg {
+        font-size: calc(12px + 1vw);
+    }
+
+    .toolsIcons {
+        font-size: calc(12px + 3vw);
+    }
+
+    .toolsDivTitles {
+        font-size: calc(11px + 1.2vw);
+        border-bottom: 1px solid rgb(0, 160, 223);
+    }
+}
+
+/* THIRD ROW MAIN PAGE */]
+#thirdRowMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #headshotDiv {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #headshot {
     width: 55%;
 }
 
-#welcomeMsgDiv {
+#welcomeQuoteDiv {
     position: relative;
 	background: #0c3b5d;
 	border-radius: .4em;
@@ -394,9 +464,10 @@ h3 {
     align-items: center;
     padding: 3% 3%;
     color: white;
+    /* height: 35vh; */
 }
     
-#welcomeMsgDiv:after {
+#welcomeQuoteDiv:after {
     content: '';
     position: absolute;
     left: 0;
@@ -411,19 +482,20 @@ h3 {
     margin-left: -82px;
 }
 
-#welcomeMsg {
-    font-size: calc(12px + 1.6vw);
-    font-family: "Averia Libre", cursive;
-}
-
-#welcomeMsg2 {
+#welcomeQuote {
     font-size: calc(10px + 1.1vw);
     font-family: "Poppins", sans-serif;
 }
 
+#quoteBy {
+    text-align: right;
+    font-family: "Averia Libre", cursive;
+    font-size: calc(12px + 1.1vw);
+}
+
 
 @media screen and (max-width: 1000px) {
-    #welcomeMsgDiv:after {
+    #welcomeQuoteDiv:after {
         content: '';
         position: absolute;
         left: 0;
@@ -444,12 +516,12 @@ h3 {
         /* width: 30% */
     }
 
-    #welcomeMsgDiv {
+    #welcomeQuoteDiv {
         margin-top: 35px;
         padding: 20px 16px;
     }
 
-    #welcomeMsgDiv:after {
+    #welcomeQuoteDiv:after {
         content: '';
         position: absolute;
         top: 0;
@@ -474,9 +546,6 @@ h3 {
         width: 75%;
     }
 }
-
-
-/* THIRD ROW MAIN PAGE */
 
 
 
@@ -1021,9 +1090,90 @@ h3 {
 
 
 /* FOOTER ALL PAGES */
-/* #footBox {
+#footRow1 {
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
 
-} */
+.footNavColumns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footNavColumnTitles {
+    font-family: "Averia Libre", cursive;
+    color: white;
+}
+
+#footNav2 {
+    color: white;
+    display: block;
+    /* border-right: 2px inset rgb(25, 178, 80, 0.4); */
+}
+
+.footNavSocial{
+    margin: 20px auto;
+}
+
+.footNavSocialIcons {
+    color: white;
+    font-size: calc(12px + 2vw);
+}
+
+#footNav3 {
+    display: block;
+    color: white;
+    border-right: 2px inset rgb(25, 178, 80, 0.4);
+    border-left: 2px outset rgb(25, 178, 80, 0.4);
+}
+
+#footNavServicesDiv {
+    margin-top: 25px;
+}
+
+.footNavLinkHouses {
+    margin: 15px auto;
+}
+
+.footNavLinks {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 0.6vw);
+}
+
+.footNavLinks:hover {
+    color: rgb(0, 160, 223);
+}
+
+#footNav4 {
+    text-align: center;
+    display: block;
+    align-items: center;
+}
+
+#footNavContactDiv {
+    margin: 40px;
+}
+
+.footNavContact {
+    color: white;
+    font-size: calc(10px + 0.8vw);
+    font-family: "Poppins", sans-serif;
+    margin: 20px auto;
+}
+
+.footNavContactLinks {
+    color: white;
+}
+
+.footNavContactLinks:hover {
+    color: rgb(0, 160, 223);
+}
 
 #footRow2 {
     padding: 15px 0 5px 0;
@@ -1037,9 +1187,10 @@ h3 {
 #footTag {
     text-align: center;
     align-items: center;
+    font-family: "Poppins", sans-serif;
 }
 
 #learicist {
     color: black;
-    font-family: "Poppins", sans-serif;
+    
 }
