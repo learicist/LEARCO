@@ -433,6 +433,19 @@ h3 {
 
     .toolsDivTitles {
         font-size: calc(11px + 1.2vw);
+    }
+
+    .toolsDiv {
+        position: relative;
+        z-index: 1;
+    }
+
+    .toolsDiv:before {
+        content: "";
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+        width: 50%;
         border-bottom: 1px solid rgb(0, 160, 223);
     }
 }
@@ -962,13 +975,6 @@ h3 {
     border-radius: 5px;
     padding: 30px 5px;
     text-align: center;
-    
-}
-
-@media screen and (max-width: 767px) {
-    .bizConsultDescriptorDiv {
-        margin: 15px auto;
-    }
 }
 
 #bizConsultDescriptorDiv1 {
@@ -1009,6 +1015,7 @@ h3 {
     background-color: rgb(33, 94, 172);
     color: white;
     padding: 20px;
+    
 }
 
 #bizConsultDescriptorDiv4 h2 {
@@ -1089,6 +1096,13 @@ h3 {
     font-size: calc(10px + 0.6vw);
 }
 
+@media screen and (max-width: 767px) {
+    .bizConsultDescriptorDiv {
+        margin: 15px 0px;
+    }
+}
+
+
 
 /* FOOTER ALL PAGES */
 #footRow1 {
@@ -1111,6 +1125,10 @@ h3 {
     font-size: calc(12px + 1.6vw);
     color: white;
     margin-top: 25px;
+}
+
+#footLogo {
+    width: 10vw;
 }
 
 #footNav2 {
@@ -1192,7 +1210,17 @@ h3 {
     color: rgb(0, 160, 223);
 }
 
+@media screen and (max-width: 1267px) and (min-width: 1013px) {
+    #footLogo {
+        width: 12vw;
+    }
+}
+
 @media screen and (max-width: 1012.5px) {
+    #footLogo {
+        width: 14vw;
+    }
+
     .footNavColumnTitles {
         font-size: calc(12px + 1.4vw);
     }
@@ -1211,25 +1239,46 @@ h3 {
 }
 
 @media screen and (max-width: 767.5px) {
+    #footLogo {
+        width: 15vw;
+    }
+
     #footRow1 {
         display: block;
         height: 100%;
         padding: 20px 0px;
     }
 
-    #footNav3 {
-        border-left: none;
-        border-right: none;
-        padding: 2px 0px 20px 0px;
-        position: relative;
-        z-index: 1;
-    }
-
     .footNavColumnTitles {
         font-size: calc(12px + 2vw);
     }
 
-    #footNav3:before {
+    .footNavSocial:nth-child(4) {
+        border-left: none;
+        border-right: none;
+        padding: 2px 0px 30px 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footNavSocial:nth-child(4):before {
+        content: "";
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+        width: 50%;
+        border-bottom: 2px inset rgb(25, 178, 80, 0.4);
+    }
+
+    .footNavLinkHouses:nth-child(4) {
+        border-left: none;
+        border-right: none;
+        padding: 2px 0px 30px 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footNavLinkHouses:nth-child(4):before {
         content: "";
         position: absolute;
         left: 25%;
@@ -1249,6 +1298,22 @@ h3 {
 
     .footNavSocialIcons {
         font-size: calc(12px + 3vw);
+    }
+
+    #footTag h5 {
+        font-size: calc(12px + 0.8vw);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footLogo {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #footLogo {
+        width: 28vw;
     }
 }
 

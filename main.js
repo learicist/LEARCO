@@ -154,14 +154,22 @@ $(document).ready(function() {
         }
     });
 
-    //COLLAPSE MENU WHEN USER CLICKS ON PAGE BODY
-    $(".pageTop").on({
+    //COLLAPSE MENU WHEN USER CLICKS ON PAGE BODY OR FOOTER
+    $(".container-fluid:not(hamburgerList)").on({
         click: function () {
             if ($("#hamButton").attr("aria-expanded") === "true") {
                 $("#hamButton").trigger("click");
             }
         }
     });
+
+    // $("#footBox").on({
+    //     click: function () {
+    //         if ($("#hamButton").attr("aria-expanded") === "true") {
+    //             $("#hamButton").trigger("click");
+    //         }
+    //     }
+    // });
     
 
 });
