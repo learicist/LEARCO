@@ -762,7 +762,7 @@ h3 {
     border-radius: 0px; 
     font-family: 'Averia Libre', cursive;
     background-color: rgb(12, 59, 93);
-    color: white);
+    color: white;
 }
 
 #assBox3 {
@@ -779,6 +779,7 @@ h3 {
     .assetBoxes {
         margin: 15px auto;
         border-radius: 5px;
+        padding: 15px 0px;
     }
 
 }
@@ -967,6 +968,12 @@ h3 {
     font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 500px) {
+    #topDivBizConsult {
+        background-size: 160vw 90vh;
+    }
+}
+
 .bizConsultRow {
     margin-top: 90px;
 }
@@ -991,7 +998,7 @@ h3 {
 }
 
 #thirdRowBizConsult div {
-    margin: auto;
+    margin: 0vh 3vw;
     background-color: rgb(25, 178, 80);
     color: rgb(12, 59, 93);
     padding: 15px 25px;
@@ -1008,7 +1015,7 @@ h3 {
 }
 
 #fourthRowBizConsult div {
-    margin: auto;   
+    margin: 0vh 4vw;   
 }
 
 #bizConsultDescriptorDiv4 {
@@ -1097,10 +1104,40 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-    .bizConsultDescriptorDiv {
-        margin: 15px 0px;
+    #thirdRowBizConsult div {
+        margin: 4vh 0vw;
+    }
+
+    #fourthRowBizConsult div {
+        margin: 4vw 0vw;
     }
 }
+
+@media screen and (max-width: 300px) {
+    #navContainer {
+        height: 70px;
+    }
+
+    #navMain {
+        height: 70px;
+    }
+
+    #titleLogo {
+        max-height: 70px; 
+    }
+
+    #hamButton {
+        border: 2px solid rgb(25, 178, 80, 0.85);
+    }
+
+    #spanIcon {
+        background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(25, 178, 80)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        width: 22px;
+        height: 25px;
+    }
+}
+
 
 
 
@@ -1281,19 +1318,17 @@ h3 {
     .footNavLinkHouses:nth-child(4):before {
         content: "";
         position: absolute;
+        border-left: none;
+        border-right: none;
         left: 25%;
         bottom: 0;
         width: 50%;
         border-bottom: 2px inset rgb(25, 178, 80, 0.4);
     }
 
-    #footNav3:before {
-        content: "";
-        position: absolute;
-        left: 25%;
-        top: 0;
-        width: 50%;
-        border-top: 2px outset rgb(25, 178, 80, 0.4);
+    #footNav3 {
+        border-left: none;
+        border-right: none;
     }
 
     .footNavSocialIcons {

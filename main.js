@@ -128,10 +128,10 @@ $(document).ready(function() {
                     break
                 case "footNavEmailLink":
                     $(this).html("michael" + "<br>" + "@learcobusinessservices" + "<br>" + ".com");
-                    $(this).css({
-                        fontSize: "calc(10px + 0.6vw)",
-                        // marginLeft: "-20px"
-                    });
+                        $("#footNavEmail").css({
+                            fontSize: "calc(10px + 0.6vw)",
+                            margin: "-13.5px auto"
+                        });
                     break
                 case "footNavTextLink":
                     $(this).html("917-443-7934");
@@ -145,7 +145,10 @@ $(document).ready(function() {
                     break
                 case "footNavEmailLink":
                     $(this).html("Email");
-                    $(this).css("font-size", "calc(10px + 0.8vw)");
+                        $("#footNavEmail").css({
+                            fontSize: "calc(10px + 0.8vw)",
+                            margin: "20px auto"
+                        });
                     break
                 case "footNavTextLink":
                     $(this).html("Text Message");
@@ -155,7 +158,7 @@ $(document).ready(function() {
     });
 
     //COLLAPSE MENU WHEN USER CLICKS ON PAGE BODY OR FOOTER
-    $(".container-fluid:not(hamburgerList)").on({
+    $(".pageTop").on({
         click: function () {
             if ($("#hamButton").attr("aria-expanded") === "true") {
                 $("#hamButton").trigger("click");
@@ -163,13 +166,18 @@ $(document).ready(function() {
         }
     });
 
-    // $("#footBox").on({
-    //     click: function () {
-    //         if ($("#hamButton").attr("aria-expanded") === "true") {
-    //             $("#hamButton").trigger("click");
-    //         }
-    //     }
-    // });
+    $("#footBox").on({
+        click: function () {
+            if ($("#hamButton").attr("aria-expanded") === "true") {
+                $("#hamButton").trigger("click");
+            }
+        }
+    });
+
+    if (window.innerWidth <= 165) {
+        // location.reload();
+        alert("Please view this page on a device with a larger screen width. Thank you");
+    }
     
 
 });
