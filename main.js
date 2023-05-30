@@ -80,6 +80,20 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
+                
+                // HANDLE UNIQUE CASES FOR CLICK FROM BIZCON PAGE
+                case "consult_bizCapBtn":
+                    console.log("test");
+                    setTimeout(function () {
+                        $(".pageTop").addClass("hidden");
+                        $("#bizCapPage").removeClass("hidden");
+                        if ($("#hamButton").attr("aria-expanded") === "true") {
+                            $("#hamButton").trigger("click");
+                        }
+                        console.log("test");
+                    }, 1500);
+                    
+                    break
             }
         }
     });

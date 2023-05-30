@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--LEARCO BUSINESS SERVICES SITE -->
+		<title>LEARCO Business Services, LLC. - Consulting Service</title>
+		<!--Meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<!-- REFERENCE SITE -> https://davidallencapital.com/ -->
+        <!-- FAVICON -->
+        <link 
+			rel="shortcut icon" 
+			type="image/x-icon" 
+			id="favicon"
+			href="https://res.cloudinary.com/learicist/image/upload/v1683314431/LEARCO/Icon_Logo_Transparent.png" />
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Poppins&display=swap" rel="stylesheet">
+		<!-- CSS only -->
+		<link 
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+			rel="stylesheet" 
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<!--Bootstrap JS & jQuery-->
+		<script 
+			src="https://code.jquery.com/jquery-3.6.1.min.js" 
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+			crossorigin="anonymous">
+		</script>
+		<script 
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+			crossorigin="anonymous">
+		</script>
+		<!--Icons and Alerts-->
+		<script src="https://kit.fontawesome.com/ca9c8dc6ce.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	</head>
+
+    <body>
+        <div id="wrapper"> <!--THIS ONLY EXISTS FOR OVERFLOW REASONS, SO ANNOYING -->
+
+            <nav class="navbar navbar-expand-lg fixed-top" id="navMain">
+                <div class="container-fluid" id="navContainer">
+                    <a class="navbar-brand" href="index.html">
+                        <img 
+                            id="titleLogo"
+                            alt="brandLogo"
+                            src="https://res.cloudinary.com/learicist/image/upload/v1683314431/LEARCO/Logo1.png"/>
+                    </a>
+                            
+                    <button 
+                        class="navbar-toggler" 
+                        id="hamButton"
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNavAltMarkup" 
+                        aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" id="spanIcon"></span>
+                    </button>
+                        
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto" id="hamburgerList">
+                            <a 
+                                style="text-decoration: none;" 
+                                class="active links visibleLinks" 
+                                id="consult_Home"
+                                aria-current="page" 
+                                href="index.html">
+                                    Home
+                            </a>
+                            <!-- <a 
+                                style="text-decoration: none;" 
+                                class="active links visibleLinks" 
+                                id="consult_empPayBtn"
+                                href="index.html">
+                                    Employee Pay Anyday
+                            </a>
+                            <a 
+                                style="text-decoration: none;" 
+                                class="active links visibleLinks" 
+                                id="consult_rdTaxBtn"
+                                href="index.html">
+                                    R & D Tax Credit
+                            </a>
+    
+                            <a
+                                style="text-decoration: none;" 
+                                class="active links visibleLinks dropdown-toggle" 
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                id="consult_dropdownCtrl"
+                                href="#">
+                                    More 
+                            </a>
+    
+                            <ul class="dropdown-menu dropdown-menu-end" id="dropdownMenu">
+                                <li class="dropdownList">
+                                    <a 
+                                        style="text-decoration: none;"
+                                        class="links dropdownLinks" 
+                                        id="consult_assetBtn"
+                                        href="index.html">
+                                            Asset Backed Financing
+                                    </a>
+                                </li>
+                                <li class="dropdownList">
+                                    <a 
+                                        style="text-decoration: none;"
+                                        class="links dropdownLinks" 
+                                        href="index.html"
+                                        id="consult_ertcBtn">
+                                            Employee Retention Tax Credit
+                                    </a>
+                                </li>
+                                <li class="dropdownList">
+                                    <a 
+                                        style="text-decoration: none;"
+                                        class="links dropdownLinks" 
+                                        href="index.html"
+                                        id="consult_payProcessBtn">
+                                            Payment Processing
+                                    </a>
+                                </li>
+                                <li class="dropdownList">
+                                    <a 
+                                        style="text-decoration: none;"
+                                        class="links dropdownLinks" 
+                                        href="index.html"
+                                        id="consult_equipFinBtn">
+                                            Equipment Financing
+                                    </a>
+                                </li>
+                                <li class="dropdownList">
+                                    <a 
+                                        style="text-decoration: none;"
+                                        class="links dropdownLinks" 
+                                        href="#"
+                                        id="consult_bizConsultBtn">
+                                            Business Consulting
+                                    </a>
+                                </li>
+                            </ul> -->
+    
+                            <!-- HIDDEN BUTTONS TO BE REVEALED ON MOBILE -->
+    
+                            <!-- <a 
+                                style="text-decoration: none;" 
+                                class="links mobileLinks" 
+                                id="consult_assetBtn"
+                                href="index.html">
+                                    Asset Backed
+                            </a>
+                            <a 
+                                style="text-decoration: none;" 
+                                class="links mobileLinks" 
+                                id="consult_ertcBtn"
+                                href="index.html">
+                                    Employee Retention Tax Credit
+                            </a>
+                            <a 
+                                style="text-decoration: none;" 
+                                class="links mobileLinks" 
+                                id="consult_payProcessBtn"
+                                href="index.html">
+                                    Payment Processing
+                            </a>
+                            <a 
+                                style="text-decoration: none;" 
+                                class="links mobileLinks" 
+                                id="consult_equipFinBtn"
+                                href="index.html">
+                                    Equipment Financing
+                            </a>
+                            <a 
+                                style="text-decoration: none;" 
+                                class="links mobileLinks" 
+                                id="bizConsultBtn"
+                                href="#">
+                                    Business Consulting
+                            </a> -->
+                        </div> 
+                        <!-- hamburgerList -->
+                    </div> 
+                    <!-- navbarNavAltMarkup -->
+                </div> 
+                <!-- navContainer -->
+            </nav>
+
+
+            <div class="container-fluid" id="bizConsultPage">
+                <div class="row topRow" id="topRowBizConsult">
+                    <div class="col-md-12 topDiv" id="topDivBizConsult" alt="Two women discussing something at a table">
+                        <div class="heroDiv">
+                            <div class="row heroTextRow">
+                                <div class="heroTextDiv col-md-10" id="bizConsultPageHero">
+                                    <h1 class="heroText">Overcome your organizational challenges</h1>
+                                    <br>
+                                    <h3>Learn from the wisdom gathered over 35 years in the field</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END TOPDIV -->
+                </div>
+                <!-- END TOPROW -->
+    
+                <div class="row secondRow bizConsultRow" id="secondRowBizConsult">
+                    <div class="col-md-10 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv1">
+                        <h4 style="font-family: 'Averia Libre', cursive; font-size: calc(10px + 1vw);">For this particular service, we have a strategic partnership with a team of business-savvy serial entrepreneurs to provide the consultative services. 
+                            <br>
+                            This team has over 35 years of successful business expertise across several industries. We are proud and honored to offer their wisdom to our client base.
+                        </h4>
+                        <!-- <br> -->
+                        <p>========</p>
+                        <h4>Every business faces seen and unseen challenges. Our
+                            business survey analysis will identify them and show how
+                            much they are costing you. Establish employee standards
+                            with clear roles and performance-based compensation.
+                        </h4>
+                    </div>
+                </div>
+    
+                <div class="row thirdRow bizConsultRow" id="thirdRowBizConsult">
+                    <div class="col-md-7 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv2">
+                        <h2>Understand Your Challenges <br></h2>
+                        <p>Individually and cohesively our team of experts in various
+                            areas of business will work with you and your team onsite or
+                            online to identify your challenges. Together we will determine
+                            how much all expenses cost you in time and money,
+                            understand the ROI and then share a plan of action to
+                            address these issues during a comprehensive presentation of
+                            findings. 
+                        </p>
+                    </div>
+                    <div class="col-md-3 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv3">
+                        <h2>Overcome and Succeed<br></h2>
+                        <p>We focus on improving operations and profits while creating
+                            a positive work-life balance for you. This is a key step to
+                            implement permanent, positive change in your life and
+                            organization.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="row fourthRow bizConsultRow" id="fourthRowBizConsult">      
+                    <div class="col-md-3 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv4">
+                        <h2>Services <br></h2>
+                        <ul>
+                            <li>Construction & Contracting</li>
+                            <li>Manufacturing</li>
+                            <li>Restaurant</li>
+                            <li>Retail</li>
+                            <li>Automotive</li>
+                            <li>Distribution & Wholesale</li>
+                            <li>Transportation & Trucking</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv5">
+                        <h2>About <br></h2>
+                        <p id="bizCon5-1">I have a unique blend of business, marketing, accounting and
+                            communications expertise —the key areas that are essential to
+                            the success of any company.
+                        </p>
+                        <br>
+                        <p id="bizCon5-2">What sets me apart is my ability to quickly determine the root
+                            cause of a company’s problems and then develop strategies and
+                            processes that are tailored specifically for the unique needs of
+                            that business. Unlike most consultants I get involved with the
+                            execution of the plan. By virtue of understanding results,
+                            together as a team, we'll adjust for improved outcomes. 
+                        </p>
+                        <br>
+                        <p id="bizCon5-3">This not only results in accelerated growth and revenue, but also
+                            frees up the owner to enjoy the success they created.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row fifthRow bizConsultRow" id="fifthRowBizConsult">
+                    <div class="col-md-8 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv6">
+                        <h2>I'm here to help you take your business from just getting-by to thriving! </h2>
+                        <br>
+                        <p>With my help, you'll go from struggling with cash flow and
+                            feeling overwhelmed financially, to achieving major profits and
+                            total financial confidence - transforming your bottom line so that
+                            it’s always looking up! Our group of private financial investors
+                            will continually be reviewing the business and provide funding
+                            where necessary to support growth.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="row sixthRow bizConsultRow" id="sixthRowBizConsult">
+                    <div class="col-md-10 bizConsultDescriptorDiv" id="bizConsultDescriptorDiv7">
+                        <h2>Calm The Chaos – Improve Work-Life Balance </h2>
+                        <br>
+                        <p>
+                            If you're looking for a truly customized and personalized
+                            approach to result-driven business strategy, to power up your
+                            business - then look no further
+                        </p>
+                        <br>
+                        <p>
+                            I bring over 35 years of business and marketing expertise to the
+                            table, combining proven strategies along with leadership
+                            development to give you custom-crafted solutions based on your
+                            individual needs without any “one size fits all” templates.
+                        </p>
+                        <br>
+                        <p>
+                            Not only will my frameworks and solutions give you exactly
+                            what you need when you need them; rest assured you won’t be
+                            alone either. I’ll be right there beside you every step of the way
+                            with personal support while we collaborate together. Your
+                            success is always a top priority, and I work hard to exceed your
+                            expectations. That’s my commitment to you!
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="row seventhRow bizConsultRow" id="seventhRowBizConsult">
+                    <div class="col-md-8 formDiv" id="formDivBizConsult">
+                        <p class="formTitle">Reach out now, and let's get you up and running today!</p>
+                        <ul id="contactBizConsultPage" class="contactForms">
+                            <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
+                                <li>
+                                    <input class="textbox" type="text" name="Name" placeholder="Name" required/>
+                                </li>
+                                <li>
+                                    <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
+                                </li>
+                                <li>
+                                    <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
+                                </li>
+                                <li>
+                                    <textarea class="textbox messageBox" name="Message" type="text" placeholder="Message" required></textarea>
+                                </li>
+                                <button class="send" name="sendBtn" type="submit">Send</button>
+                            </form>
+                        </ul>
+                    </div>
+                    <!-- END FORM DIV BIZ CONSULT -->
+                </div>
+    
+            </div>
+        
+        </div>
+        <!-- End Wrapper -->
+
+        <script src="main.js"></script>
+
+    </body>
+
+    <footer>
+        <div class="container-fluid" id="footBox">
+            <div class="row" id="footRow1">
+                <!-- https://www.facebook.com/search/top?q=learcobusinessservices -->
+                <div class="col-md-3 footNavColumns" id="footNav1">
+                    <img 
+                        id="footLogo"
+                        alt="brandLogo"
+                        src="https://res.cloudinary.com/learicist/image/upload/v1683314431/LEARCO/Logo_Transparent.png"/>
+                </div>
+                <div class="col-md-3 footNavColumns" id="footNav2">
+                    <h2 class="footNavColumnTitles">Social Media</h2>
+                    <div class="footNavSocial">
+                        <a 
+                            target="_blank"
+                            href="https://www.facebook.com/profile.php?id=100088232386809"
+                            class="footNavSocialLinks"
+                            style="text-decoration: none;"
+                            id="facebookLink"> 
+                                <i class="fa-brands fa-facebook footNavSocialIcons"></i>
+                        </a>
+                    </div>
+                    <div class="footNavSocial">
+                        <a 
+                            target="_blank"
+                            href="https://www.linkedin.com/in/michael-j-leary-650764b/"
+                            class="footNavSocialLinks"
+                            style="text-decoration: none;"
+                            id="linkedInLink"> 
+                                <i class="fa-brands fa-linkedin footNavSocialIcons"></i>
+                        </a>
+                    </div>
+                    <div class="footNavSocial">
+                        <a 
+                            target="_blank"
+                            href="https://www.instagram.com/money.mikeleary/"
+                            class="footNavSocialLinks"
+                            style="text-decoration: none;"
+                            id="instagramLink"> 
+                                <i class="fa-brands fa-instagram footNavSocialIcons"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 footNavColumns" id="footNav3">
+                    <h2 class="footNavColumnTitles" id="consult_FootMid">
+                        <a
+                            href="index.html"
+                            id="consult_FootHome"
+                            style="text-decoration: none;">
+                            To explore our other services, 
+                            <br>
+                            navigate to Main Webpage
+                        </a>
+                    </h2>
+                    <div id="footNavServicesDiv">
+                        <!-- <h4 class="footNavLinkHouses">
+                            <a
+                                href="index.html"
+                                class="footNavLinks"
+                                id="consult_footBizCap"
+                                style="text-decoration: none;">
+                                Business Capital
+                            </a>
+                        </h4> 
+                         <h4 class="footNavLinkHouses">
+                            <a
+                                href="index.html"
+                                class="footNavLinks"
+                                id="consult_footEquipFin"
+                                style="text-decoration: none;">
+                                Equipment Financing
+                            </a> 
+                        </h4>
+                        <h4 class="footNavLinkHouses">
+                            <a
+                                href="index.html"
+                                class="footNavLinks"
+                                id="consult_footAssBack"
+                                style="text-decoration: none;">
+                                Asset Backed Financing
+                            </a> 
+                        </h4>
+                        <h4 class="footNavLinkHouses">
+                            <a
+                                href="index.html"
+                                class="footNavLinks"
+                                id="consult_footERTC"
+                                style="text-decoration: none;">
+                                Employee Retention Tax Credit
+                            </a> 
+                        </h4> -->
+                    </div>
+                </div>
+                <div class="col-md-3 footNavColumns" id="footNav4">
+                    <h2 class="footNavColumnTitles">Reach Out</h2>
+                    <div id="footNavContactDiv">
+                        <h4 class="footNavContact" id="footNavPhone">
+                            <a
+                                href="#/"
+                                class="footNavContactLinks"
+                                id="footNavPhoneLink"
+                                style="text-decoration: none;">
+                                    Phone Call
+                            </a>
+                        </h4>
+                        <h4 class="footNavContact" id="footNavEmail">
+                            <a
+                                href="#/"
+                                class="footNavContactLinks"
+                                id="footNavEmailLink"
+                                style="text-decoration: none;">
+                                    Email
+                            </a>
+                        </h4>
+                        <h4 class="footNavContact" id="footNavText">
+                            <a
+                                href="#/"
+                                class="footNavContactLinks"
+                                id="footNavTextLink"
+                                style="text-decoration: none;">
+                                    Text Message
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="footRow2">
+                <div class="col-md-8" id="footTag">
+                    <h5>LEARCO BUSINESS SERVICES, LLC. | &copy; 2023 | ALL RIGHTS RESERVED</h5>
+                    <h5>PAGE BUILT BY: 
+                        <a 
+                            target="_blank" 
+                            id="learicist"
+                            style="text-decoration: none; color: rgb(33, 94, 172)"
+                            class="footLinks"
+                            href="https://learicist.github.io/Portfolio/">
+						        <strong>Learicist &copy;2023</strong>
+					    </a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

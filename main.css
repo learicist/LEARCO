@@ -1326,6 +1326,25 @@ h3 {
         border-bottom: 2px inset rgb(25, 178, 80, 0.4);
     }
 
+    #consult_FootMid {
+        border-left: none;
+        border-right: none;
+        padding: 2px 0px 30px 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #consult_FootMid:before {
+        content: "";
+        position: absolute;
+        border-left: none;
+        border-right: none;
+        left: 25%;
+        bottom: 0;
+        width: 50%;
+        border-bottom: 2px inset rgb(25, 178, 80, 0.4);
+    }
+
     #footNav3 {
         border-left: none;
         border-right: none;
@@ -1370,4 +1389,13 @@ h3 {
 #learicist {
     color: black;
     
+}
+
+
+#consult_FootHome {
+    color: white;
+}
+
+#consult_FootHome:hover {
+    color:rgb(0, 160, 223);
 }
