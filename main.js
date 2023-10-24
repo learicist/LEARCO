@@ -21,8 +21,9 @@ $(document).ready(function() {
     });
 
     const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#assetPage"), $("#ertcPage"), $("#payProcessPage"), $("#equipFinPage"), $("#bizConsultPage")];
+    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivAsset"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivEquipFin"), $("#formDivBizConsult")];
 
-    console.log(pages[0]);
+    //console.log(pages[0]);
 
     // NAV OPTIONS
     $(".links").on({
@@ -174,8 +175,40 @@ $(document).ready(function() {
             }
         },
         click: function () {
+            // IF USER CHOOSES TO REACH OUT VIA EMAIL
             if (this.id === "footNavEmailLink") {
                 console.log('test');
+                let currPage;
+                // FIND CURRENT ACTIVE PAGE
+                for (let i = 0; i < pages.length; i++) {
+                    if (window.location.href.indexOf("consulting") > -1) {
+                        console.log("tony");
+                        currPage = 7;
+                        break;
+
+                    } else if (!pages[i].hasClass("hidden")) {
+                        currPage = i;
+                        break;
+                    }
+                }
+
+                // if (typeof currPage === undefined) {
+                //     currPage = 7;
+                //     console.log(pages[currPage]);
+                // }
+
+                //currPage = 7;
+                //console.log(pages[currPage]);
+
+                // CHECK IF PAGE IS CURRENTLY DISPLAYING CONTACT FORM
+                if (forms[currPage].hasClass("hidden")) {
+                    // IF NOT, REVEAL IT. IF YES, HIDE IT 
+                    forms[currPage].removeClass("hidden");
+                } else {
+                    forms[currPage].addClass("hidden");
+                }
+                
+                //console.log('test2');
             }
             
         }
