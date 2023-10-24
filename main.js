@@ -20,62 +20,66 @@ $(document).ready(function() {
         location.reload();
     });
 
+    const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#assetPage"), $("#ertcPage"), $("#payProcessPage"), $("#equipFinPage"), $("#bizConsultPage")];
+
+    console.log(pages[0]);
+
     // NAV OPTIONS
     $(".links").on({
         click: function() {
             switch (this.id) {
                 case "bizCapBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#bizCapPage").removeClass("hidden");
+                    pages[0].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "empPayBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#empPayPage").removeClass("hidden");
+                    pages[1].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "rdTaxBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#rdTaxPage").removeClass("hidden");
+                    pages[2].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "assetBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#assetPage").removeClass("hidden");
+                    pages[3].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "ertcBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#ertcPage").removeClass("hidden");
+                    pages[4].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "payProcessBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#payProcessPage").removeClass("hidden");
+                    pages[5].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "equipFinBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#equipFinPage").removeClass("hidden");
+                    pages[6].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
                 case "bizConsultBtn":
                     $(".pageTop").addClass("hidden");
-                    $("#bizConsultPage").removeClass("hidden");
+                    pages[7].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
@@ -142,10 +146,10 @@ $(document).ready(function() {
                     break
                 case "footNavEmailLink":
                     $(this).html("michael" + "<br>" + "@learcobusinessservices" + "<br>" + ".com");
-                        $("#footNavEmail").css({
-                            fontSize: "calc(10px + 0.6vw)",
-                            margin: "-13.5px auto"
-                        });
+                    $("#footNavEmail").css({
+                        fontSize: "calc(10px + 0.6vw)",
+                        margin: "-13.5px auto"
+                    });
                     break
                 case "footNavTextLink":
                     $(this).html("917-443-7934");
@@ -159,15 +163,21 @@ $(document).ready(function() {
                     break
                 case "footNavEmailLink":
                     $(this).html("Email");
-                        $("#footNavEmail").css({
-                            fontSize: "calc(10px + 0.8vw)",
-                            margin: "20px auto"
-                        });
+                    $("#footNavEmail").css({
+                        fontSize: "calc(10px + 0.8vw)",
+                        margin: "20px auto"
+                    });
                     break
                 case "footNavTextLink":
                     $(this).html("Text Message");
                     break
             }
+        },
+        click: function () {
+            if (this.id === "footNavEmailLink") {
+                console.log('test');
+            }
+            
         }
     });
 
