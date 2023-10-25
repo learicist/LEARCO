@@ -1,0 +1,299 @@
+commit 175f09e0d317d48e7303d5091df1f38abb0e6917
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sun Apr 30 15:08:52 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sun Apr 30 15:08:52 2023 -0400
+
+    Background color for Asset Box. 5 minutes
+
+commit 6c9f7032ce64d7776e4124e9a1612a62b2b04e8c
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sun Apr 30 15:04:05 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sun Apr 30 15:04:05 2023 -0400
+
+    Fix box break on BizCap page. Border-rad and padding on BizConsult row. Bring card image below on mobile for payProcess page. Asset page change font weight and coloring. Change font color on ERTC page section. 1 hour
+
+commit 32a2d663face202d33fbcc57ae37168c8894ec49
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sun Apr 30 00:48:08 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sun Apr 30 00:48:08 2023 -0400
+
+    Begin tackling Final Page. Relocate and therefore fix positioning error on ERTC page with non-centered text toward bottom. Complete coloring and font changes for final page. Make sizing, positioning, border adjustments to accomodate. Adjust sizing, font, padding for form on all pages, specifically message box; adapt IDs from HTML to CSS to match; adjust Send button font size, margins for title of forms, line heigh on form inputs. 4 hours
+
+commit 676d92fe86b5b3592f270a282692f501c8d8ff32
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Fri Apr 28 19:23:26 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Fri Apr 28 19:23:26 2023 -0400
+
+    Form size, positioning, textbox responsiveness for mobile. Footer adjustments for centering. Solved hamburger menu dropdown for mobile, coloring, font change and size, centering, remove more button, address logic to reveal and hide buttons accordingly, dynamic responsiveness on all elements adjusting for screen size. Finish Asset page second row collapsing, adjust positiong of hero text for screen size text loss. Finish adjusting PayProcess for mobile in second row. Gather Row css rules and spread margins evenly across all pages. Equip Fin page coloring, font changes, positioning, sizing, margins, etc. 2.5 hours
+
+commit 1ca718862d6b88f860b88f3510e55e5548a55b8f
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Fri Apr 28 13:50:48 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Fri Apr 28 13:50:48 2023 -0400
+
+    Adjust box size, border-radius, and positioning for second row of Asset Backed to adjust for mobile responsiveness. ERTC page coloring, font changes and according position adjustment with margins. PayProcess page font changes, padding and coloring for second row, still need to adjust for mobile. 1 hour
+
+commit a296701dbb1ff4df4aa5e719592989feb87a48db
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Apr 27 23:11:56 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Apr 27 23:11:56 2023 -0400
+
+    Widen second row box on Emp Pay page, 5 minutes
+
+commit 5db7e79a07ce0bcfe7f874426ec4edc22826ae6a
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Apr 27 23:04:08 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Apr 27 23:04:08 2023 -0400
+
+    Opacity on color wipe of hero images. Continuing Font changes, continuing color changes, up to Asset Backed page. Adjust coloring for speech bubble and mobile responsiveness. Adjust positioning to account for font change on Biz Cap page, add padding, adjust min height of boxes to maintain effect, etc. Adjust positioning and font sizes on Emp Pay page to account for font change. Coloring, margins, font adjustments on RD page, margins within list for breathing room. Custom border radius, font choices, and font sizing for second row of Asset Backed page. 3.5 hours
+
+commit d2f47d3608fc5e12a2ef71e5dd356519b52f579d
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Wed Apr 26 19:18:04 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Wed Apr 26 19:18:04 2023 -0400
+
+    Inject color into site using Logo pallete. Adjust dropdown menu items to account for change, rewrite HTML for same reason. Adjust fonts accordingly. Change image cropping for payment processing page. 2.5 hours
+
+commit 04bd7d37b415b078bcb0f9269ba3870f82daf00f
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Apr 6 00:59:13 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Apr 6 00:59:13 2023 -0400
+
+    add contact form to Biz Consult page, add padding and border radius to elements on that page, fix typo in copy from source on that page. 30 minutes
+
+commit 9d46e67dcc6e856681d22deda1d30fb012c536c3
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Tue Mar 28 02:24:48 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Tue Mar 28 02:24:48 2023 -0400
+
+    Adjust copy for ERTC page per client email request, adjust positioning of hero text accordingly. 10 minutes
+
+commit 66a31645d7f0ba98130f3d69e08042caf666907c
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Mon Mar 27 00:32:19 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Mon Mar 27 00:32:19 2023 -0400
+
+    Addressing Email requests. Change text in speech bubble, Asset Backed tab name, Biz Bap page copy changes, Emp Pay page copy changes, ERTC page confirm with client, Biz Consult page color changes for legibility. 1 hour
+
+commit d47b82531d2a7e3e4c6f4387930ce084ed297891
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Tue Mar 21 04:41:06 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Tue Mar 21 04:41:06 2023 -0400
+
+    Button font size when collapsed, font size of placeholder text, changed phone number to required, adjust EmpPay page, speech bubble responsiveness, reduce navbar menu options to three plus dropdown, styling and positioning of dropdown option menu. 3.5 hours
+
+commit 218dfff9e52b933e059cf35bba54f6c3369877b3
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Fri Mar 17 02:19:41 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Fri Mar 17 02:19:41 2023 -0400
+
+    Coloring in multiple pages, styling for Biz Consult page, change navbar mouseenter color, solve bug re: hero image creating unwanted horizontal scrollbar, font size on multiple pages. 1.5 hours
+
+commit 95192871771b466361807e4cb99bafe1f0dab64a
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Mar 16 17:27:31 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Mar 16 17:27:31 2023 -0400
+
+    Styling of form, begin solve of side margin bug
+
+commit 5f27ca2a715dc19e5922a461443e7272e735683e
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Tue Mar 14 18:57:17 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Tue Mar 14 18:57:17 2023 -0400
+
+    add all copy for Biz Consult page, adjust picture styling to avoid stretching. 1 hour
+
+commit 39d202cbc86b4b45511781a90dceb973778ebed5
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Tue Mar 14 11:57:18 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Tue Mar 14 11:57:18 2023 -0400
+
+    add first bit of copy to biz consult page. 15 mins
+
+commit 7de4feb0b100fcf2c9e5879b97ff860defc8b3f8
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sun Mar 12 03:49:22 2023 -0400
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sun Mar 12 03:49:22 2023 -0400
+
+    Conditional vertical margin for humburger menu,  functionality to close menu when nav choice is made, margins for Biz Cap Boxes in media query, fix bug re: dynamic margins on nav links, create beginnings of Biz Consult Page, Equip Fin Icon size and background color introduction and border styling, font size for secondary headers and margins to accomodate, float nav menu right when dropdown, solve full color dropdown with it, padding and styling for ham menu when dropped. 1 hour 45 mins
+
+commit f26ab091874106987559cb2cf130294894964dfc
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Mar 9 15:45:25 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Mar 9 15:45:25 2023 -0500
+
+    create Equip Fin page, positioning of elements, create copy. 1.5 hours
+
+commit 5455ec00e015ed6d76bc2df4350eb6797104dd22
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Mar 9 15:00:17 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Mar 9 15:00:17 2023 -0500
+
+    check for JS functionality. 10 mins
+
+commit cc3defeda5ce63fc4f7f8179dd3a7697eb537416
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Mar 9 01:43:35 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Mar 9 01:43:35 2023 -0500
+
+    Create Payment Processing page, add copy, add legal language, add coloring and some styling, create last button, add vertical margins for links, compress photos, bring in photo of card from DAC, get pics for equip page. 3 hours
+
+commit d52fc6ba9ce6015a1b0cd4892631bd62572b26c6
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Wed Mar 8 01:55:01 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Wed Mar 8 01:55:01 2023 -0500
+
+    Create ERTC Page, add coloring and styling to other pages, create copy for page. 2 hours
+
+commit dad0b492f5a7d2a219f00bf805e73e0c1d058b1d
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Tue Mar 7 16:05:30 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Tue Mar 7 16:05:30 2023 -0500
+
+    create Asset Page, add coloring throughout, fix bug on PayProc nav link, create copy for pages. 3 hours
+
+commit 568535936a189e0f10e24ace4745de408cd362d8
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Tue Mar 7 01:20:13 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Tue Mar 7 01:20:13 2023 -0500
+
+    add other colors in, style footer, add legal language, create R&D page, create Emp. Pay page, integrate icons for R&D page, add language from client-provided image, forms on both pages, some styling on both pages. 4 hours
+
+commit 064ce6b06e05f438daf4d905206bdffe04a4f0fe
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Mon Mar 6 14:29:40 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Mon Mar 6 14:29:40 2023 -0500
+
+    add font family to CSS
+
+commit 2fc1344aa11b2cdcdc0d22aed7b0b7dcba285046
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Mon Mar 6 14:27:56 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Mon Mar 6 14:27:56 2023 -0500
+
+    add font connects to page
+
+commit 93188360e703288065d522e563927e7596f34b5a
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Mon Mar 6 02:33:01 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Mon Mar 6 02:33:01 2023 -0500
+
+    Biz Cap page created and some styling, nav button functionality begun and switch statement introduced, global CSS rules introduced, logo click reload initiated, contact form built & partially styled & setup on back end & put on biz cap page. Need client verification of email for form. 3 hours
+
+commit f6ae111094f4f3376f07d3c845b416acf1e137bc
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sun Mar 5 15:27:15 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sun Mar 5 15:27:15 2023 -0500
+
+    added footer with tag, corrected spelling in button, spelled out acronyms in nav, added final two buttons, 1.5 hours
+
+commit 52d2b224c9dcf1d6131028306df38978fc44986c
+Author:     Michael <learicist@gmail.com>
+AuthorDate: Sun Mar 5 03:25:53 2023 -0500
+Commit:     GitHub <noreply@github.com>
+CommitDate: Sun Mar 5 03:25:53 2023 -0500
+
+    Add link to hosted version
+
+commit 8c31ed3466bf8ec4db4088adce7d48d015d2efc1
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sun Mar 5 03:21:26 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sun Mar 5 03:21:26 2023 -0500
+
+    Blur navbar, style navbar differently, size and style nav buttons more, darken hero image, reposition hero font and update it, create welcome div with contents, test different speech bubbles, create PNG's for multiple speech bubbles, find custom CSS solution and style accordingly, add text and position it, add headshot and position and size it. 3 hours
+
+commit 458ea207f5445d166670fb333fb08aa17bee20f8
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Sat Feb 25 21:57:56 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Sat Feb 25 21:57:56 2023 -0500
+
+    hero image on main page, styling, color layerying, font, positioning, and styling
+
+commit 4c7a2f6a66a965ce4e949a3216c592094aa59b50
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Fri Feb 24 00:51:57 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Fri Feb 24 00:51:57 2023 -0500
+
+    begin navbar styling, add JavaScript file, acquire color scheme from reference page. 2 hours
+
+commit 6b1c3c2b36a1ca5c56cc12ef70b388cc145013ac
+Merge: 5eab171 83dc60b
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Feb 23 18:38:27 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Feb 23 18:38:27 2023 -0500
+
+    Merge branch 'master' of https://github.com/learicist/LEARCO
+
+commit 5eab171ae7394dda243e1e47ac72b54350e9ba20
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Feb 23 18:35:22 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Feb 23 18:35:22 2023 -0500
+
+    Additional comment to previous commit --> 1.5 hours
+
+commit 83dc60b702415dab29768ec28c8546ac137943ec
+Author:     Michael <learicist@gmail.com>
+AuthorDate: Thu Feb 23 18:33:59 2023 -0500
+Commit:     GitHub <noreply@github.com>
+CommitDate: Thu Feb 23 18:33:59 2023 -0500
+
+    Create README
+
+commit 3689e38b446e3a7797249221c33769f3fb007dad
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Feb 23 18:27:20 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Feb 23 18:27:20 2023 -0500
+
+    resolve navbar structural issues and responsiveness, add padding for buttons, sizing for logo
+
+commit 63d2f18a7012f63a23eb93e4ec0693235bbd32d1
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Fri Feb 17 00:47:06 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Fri Feb 17 00:47:06 2023 -0500
+
+    navigating styling for navbar, 1.5 hours
+
+commit 2f9d9331a6d07f1308834f97df366cb261068813
+Author:     The Doctor <learicist@gmail.com>
+AuthorDate: Thu Feb 16 17:23:55 2023 -0500
+Commit:     The Doctor <learicist@gmail.com>
+CommitDate: Thu Feb 16 17:23:55 2023 -0500
+
+    first commit, some of navbar
+
+
+

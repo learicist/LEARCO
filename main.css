@@ -304,6 +304,7 @@ h3 {
     margin: 25px;
     padding: 30px 0px 20px 0px;
     align-items: center;
+    scroll-margin-top: 65px;
 }
 
 .contactForms {

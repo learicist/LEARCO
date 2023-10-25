@@ -175,43 +175,49 @@ $(document).ready(function() {
             }
         },
         click: function () {
-            // IF USER CHOOSES TO REACH OUT VIA EMAIL
-            if (this.id === "footNavEmailLink") {
-                console.log('test');
-                let currPage;
-                // FIND CURRENT ACTIVE PAGE
-                for (let i = 0; i < pages.length; i++) {
-                    if (window.location.href.indexOf("consulting") > -1) {
-                        console.log("tony");
-                        currPage = 7;
-                        break;
-
-                    } else if (!pages[i].hasClass("hidden")) {
-                        currPage = i;
-                        break;
+            // IF USER CHOOSES TO REACH OUT VIA EMAIL AND USER IS ON PC
+            if (this.id === "footNavEmailLink") { 
+                if (window.innerWidth >= 1050) {
+                    console.log('test');
+                    let currPage;
+                    // FIND CURRENT ACTIVE PAGE
+                    for (let i = 0; i < pages.length; i++) {
+                        if (window.location.href.indexOf("consulting") > -1) {
+                            //console.log("tony");
+                            currPage = 7;
+                            break;
+                        } else if (!pages[i].hasClass("hidden")) {
+                            currPage = i;
+                            break;
+                        }
                     }
+
+                    // CHECK IF PAGE IS CURRENTLY DISPLAYING CONTACT FORM
+                    if (forms[currPage].hasClass("hidden")) {
+                        // IF NOT, REVEAL IT. IF YES, HIDE IT 
+                        forms[currPage].removeClass("hidden");
+                        forms[currPage][0].scrollIntoView();
+                    } else {
+                        forms[currPage].addClass("hidden");
+                    }
+                // IF USER IS ON MOBILE DEVICE
+                } else if (window.innerWidth < 1050) {
+                    console.log('mobiletest');
+                   
+                    // TRY THIS FOR MOBILE
+                    // this.mousedown(function(e) {
+                    //     clearTimeout(this.downTimer);
+                    //     this.downTimer = setTimeout(function() {
+                    //         alert('mousedown > 2 sec');   
+                    //     }, 2000);
+                    // }).mouseup(function(e) {
+                    //     clearTimeout(this.downTimer);
+                    // });
                 }
-
-                // if (typeof currPage === undefined) {
-                //     currPage = 7;
-                //     console.log(pages[currPage]);
-                // }
-
-                //currPage = 7;
-                //console.log(pages[currPage]);
-
-                // CHECK IF PAGE IS CURRENTLY DISPLAYING CONTACT FORM
-                if (forms[currPage].hasClass("hidden")) {
-                    // IF NOT, REVEAL IT. IF YES, HIDE IT 
-                    forms[currPage].removeClass("hidden");
-                } else {
-                    forms[currPage].addClass("hidden");
-                }
-                
-                //console.log('test2');
             }
             
         }
+
     });
 
     //COLLAPSE MENU WHEN USER CLICKS ON PAGE BODY OR FOOTER

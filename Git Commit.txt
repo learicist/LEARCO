@@ -1,0 +1,1 @@
+Build separate html file, link and communicate all files accordingly, adjust CSS with IDs and Classes to accomodate, adjust JavaScript triggers on button clicks, redirect button pointers, ensure jumps between HTML pages are correct in all directions, prevent empty page load on new url, create new url, adjust button nav options, change footer behavior. 2 hours
