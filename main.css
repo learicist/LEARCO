@@ -88,7 +88,7 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
 
 #dropdownMenu {
     text-align: center;
-    margin-top: -2px;
+    margin-top: -4px;
     padding: 2px 10px;
     background-color: rgb(38, 38, 38);
 }
@@ -737,27 +737,27 @@ h3 {
 
 
 /* ASSET BACKED PAGE */
-#topDivAsset {
-    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1677372737/LEARCO/Diverse3.jpg");
+#topDivHealth {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1699835409/LEARCO/online-marketing-hIgeoQjS_iE-unsplash.jpg");
 }
 
-#assetPageHero {
+#healthPageHero {
     margin-top: 12vh;
 }
 
 @media screen and (min-width: 1250px) {
-    #assetPageHero {
+    #healthPageHero {
         margin-top: 7.5vh;
     }
 }
 
-#assetDescriptor {
+#healthDescriptor {
     display: flex;
     justify-content: center;
     padding: 10px 0;
 }
 
-.assetBoxes {
+.healthBoxes {
     text-align: center;
     background-color: rgb(33, 94, 172);
     /* border: 1px solid rgb(25, 178, 80); */
@@ -786,11 +786,11 @@ h3 {
 }
 
 @media screen and (max-width: 720px) {
-    #assetDescriptor {
+    #healthDescriptor {
         display: block;
     }
 
-    .assetBoxes {
+    .healthBoxes {
         margin: 15px auto;
         border-radius: 5px;
         padding: 15px 0px;
@@ -798,15 +798,16 @@ h3 {
 
 }
 
-.assetIconDiv {
+.healthIconDiv {
     margin: 20px auto;
+    padding: 5px 20px;
 }
 
-.assetIcons {
+.healthIcons {
     font-size: calc(12px + 3vw);
 }
 
-.assetDescriptors {
+.healthDescriptors {
     /* font-size: calc(12px + 1.6vw); */
 }
 

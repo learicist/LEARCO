@@ -20,8 +20,8 @@ $(document).ready(function() {
         location.reload();
     });
 
-    const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#assetPage"), $("#ertcPage"), $("#payProcessPage"), $("#equipFinPage"), $("#bizConsultPage")];
-    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivAsset"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivEquipFin"), $("#formDivBizConsult")];
+    const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), $("#payProcessPage"), $("#equipFinPage"), $("#bizConsultPage")];
+    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivEquipFin"), $("#formDivBizConsult")];
 
     //console.log(pages[0]);
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "assetBtn":
+                case "healthBtn":
                     $(".pageTop").addClass("hidden");
                     pages[3].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
@@ -114,16 +114,16 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "footEquipFin":
+                case "footPayProcess":
                     $(".pageTop").addClass("hidden");
-                    $("#equipFinPage").removeClass("hidden");
+                    $("#payProcessPage").removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "footAssBack":
+                case "footHealth":
                     $(".pageTop").addClass("hidden");
-                    $("#assetPage").removeClass("hidden");
+                    $("#healthPage").removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
@@ -202,17 +202,26 @@ $(document).ready(function() {
                     }
                 // IF USER IS ON MOBILE DEVICE
                 } else if (window.innerWidth < 1050) {
-                    console.log('mobiletest');
-                   
-                    // TRY THIS FOR MOBILE
-                    // this.mousedown(function(e) {
-                    //     clearTimeout(this.downTimer);
-                    //     this.downTimer = setTimeout(function() {
-                    //         alert('mousedown > 2 sec');   
-                    //     }, 2000);
-                    // }).mouseup(function(e) {
-                    //     clearTimeout(this.downTimer);
-                    // });
+                    let start, end;
+                    $(this).mousedown(function() {
+                        start = new Date().getSeconds();
+                        console.log(start);
+                        // setTimeout(function() {  
+                        //     end = new Date();
+                        // }, 1200);
+                    });
+
+                    $(this).mouseup(function () {
+                        end = new Date().getSeconds();
+                        //console.log(end);
+                    });
+
+                    //console.log(Math.floor(end - start));
+
+                    // if (end - start > 1200) {
+                    //     alert('this worked');
+                    // }
+                    
                 }
             }
             
