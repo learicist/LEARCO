@@ -911,24 +911,24 @@ h3 {
 
 
 /* EQUIP FIN PAGE */
-#topDivEquipFin {
-    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1678323642/LEARCO/equip3.jpg");
+#topDivPharm {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1700440891/LEARCO/pharmacy1.jpg");
 }
 
-#equipFinPageHero {
-    margin-top: 22vh;
+#pharmPageHero {
+    margin-top: 15vh;
 }
 
-.equipFinDescriptorDivs {
+.pharmDescriptorDivs {
     text-align: center;
 }
 
-.equipFinIcons {
+.pharmIcons {
     font-size: calc(12px + 2vw);
     margin: 10px auto;
 }
 
-#topEquipFinDescriptor {
+#topPharmDescriptor {
     background-color: rgb(12, 59, 93);
     color: white;
     font-family: "Poppins", sans-serif;
@@ -937,7 +937,7 @@ h3 {
     border-radius: 20px;
 }
 
-.middleEquipFinDescriptors {
+.middlePharmDescriptors {
     margin: auto;
     background-color: rgb(33, 94, 172);
     color: white;
@@ -948,7 +948,7 @@ h3 {
     align-items: center;
 }
 
-#bottomEquipFinDescriptor {
+#bottomPharmDescriptor {
     background-color: rgb(12, 59, 93);
     color: white;
     font-family: "Poppins", sans-serif;
@@ -958,13 +958,13 @@ h3 {
 }
 
 @media screen and (min-width: 1071px) {
-    .middleEquipFinDescriptors {
+    .middlePharmDescriptors {
         min-height: 40vh;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .middleEquipFinDescriptors{
+    .middlePharmDescriptors{
         margin: 15px auto;
         font-size: calc(12px + 1.8vw);
     }

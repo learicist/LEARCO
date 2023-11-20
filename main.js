@@ -20,8 +20,8 @@ $(document).ready(function() {
         location.reload();
     });
 
-    const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), $("#payProcessPage"), $("#equipFinPage"), $("#bizConsultPage")];
-    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivEquipFin"), $("#formDivBizConsult")];
+    const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), $("#payProcessPage"), $("#pharmPage"), $("#bizConsultPage")];
+    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivPharm"), $("#formDivBizConsult")];
 
     //console.log(pages[0]);
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "equipFinBtn":
+                case "pharmBtn":
                     $(".pageTop").addClass("hidden");
                     pages[6].removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
@@ -177,50 +177,25 @@ $(document).ready(function() {
         click: function () {
             // IF USER CHOOSES TO REACH OUT VIA EMAIL AND USER IS ON PC
             if (this.id === "footNavEmailLink") { 
-                if (window.innerWidth >= 1050) {
-                    console.log('test');
-                    let currPage;
-                    // FIND CURRENT ACTIVE PAGE
-                    for (let i = 0; i < pages.length; i++) {
-                        if (window.location.href.indexOf("consulting") > -1) {
-                            //console.log("tony");
-                            currPage = 7;
-                            break;
-                        } else if (!pages[i].hasClass("hidden")) {
-                            currPage = i;
-                            break;
-                        }
+                let currPage;
+                // FIND CURRENT ACTIVE PAGE
+                for (let i = 0; i < pages.length; i++) {
+                    if (window.location.href.indexOf("consulting") > -1) {
+                        currPage = null;
+                        break;
+                    } else if (!pages[i].hasClass("hidden")) {
+                        currPage = i;
+                        break;
                     }
+                }
 
-                    // CHECK IF PAGE IS CURRENTLY DISPLAYING CONTACT FORM
-                    if (forms[currPage].hasClass("hidden")) {
-                        // IF NOT, REVEAL IT. IF YES, HIDE IT 
-                        forms[currPage].removeClass("hidden");
-                        forms[currPage][0].scrollIntoView();
-                    } else {
-                        forms[currPage].addClass("hidden");
-                    }
-                // IF USER IS ON MOBILE DEVICE
-                } else if (window.innerWidth < 1050) {
-                    let start, end;
-                    $(this).mousedown(function() {
-                        start = new Date().getSeconds();
-                        console.log(start);
-                        // setTimeout(function() {  
-                        //     end = new Date();
-                        // }, 1200);
-                    });
-
-                    $(this).mouseup(function () {
-                        end = new Date().getSeconds();
-                        //console.log(end);
-                    });
-
-                    //console.log(Math.floor(end - start));
-
-                    // if (end - start > 1200) {
-                    //     alert('this worked');
-                    // }
+                // CHECK IF PAGE IS CURRENTLY DISPLAYING CONTACT FORM
+                if (forms[currPage].hasClass("hidden")) {
+                    // IF NOT, REVEAL IT. IF YES, HIDE IT 
+                    forms[currPage].removeClass("hidden");
+                    forms[currPage][0].scrollIntoView();
+                } else {
+                    forms[currPage].addClass("hidden");
                     
                 }
             }
