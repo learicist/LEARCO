@@ -89,19 +89,19 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
 #dropdownMenu {
     text-align: center;
     margin-top: -4px;
-    padding: 2px 10px;
+    padding: 2px 15px;
     background-color: rgb(38, 38, 38);
 }
 
 .dropdownList {
-    margin: 20px auto;
+    margin: 18px 10px;
 }
 
 .dropdownLinks {
     border-radius: 5px;
     text-align: center;
     padding: 5px 10px;
-    font-size: calc(9px + 0.5vw);
+    font-size: calc(10px + 0.5vw);
     font-family: "Poppins", sans-serif;
     white-space: nowrap;
     box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.45);
@@ -130,7 +130,7 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
     }
 
     .links {
-        margin: 5px 10px;
+        margin: 8px 10px;
         font-size: calc(10px + 0.75vw);
         color: rgb(0, 160, 223);
         background-color: white;
@@ -165,7 +165,8 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
         float: right;
         background-color: rgb(12, 59, 93);
         border-radius: 15px;
-        padding: 10px 20px;
+        padding: 15px 20px;
+        margin-right: -5px;
     }
 
     #navMain {
@@ -813,13 +814,14 @@ h3 {
 
 
 /* ERTC PAGE */
+/*
 #topDivErtc {
     background-image: url("https://res.cloudinary.com/learicist/image/upload/v1678301246/LEARCO/Diverse4.jpg");
 }
 
-#ertcPageHero {
+ #ertcPageHero {
     margin-top: 18vh;
-}
+} 
 
 #ertcDescriptorDiv {
     text-align: center;
@@ -855,12 +857,11 @@ h3 {
 }
 
 .ertcDescriptors {
-    /* border: 1px solid black; */
     font-size: calc(12px + 1vw);
     margin: 35px auto;
     font-family: "Poppins", sans-serif;
 }
-
+*/
 
 
 /* PAYMENT PROCESSING PAGE */

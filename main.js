@@ -57,13 +57,13 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "ertcBtn":
-                    $(".pageTop").addClass("hidden");
-                    pages[4].removeClass("hidden");
-                    if ($("#hamButton").attr("aria-expanded") === "true") {
-                        $("#hamButton").trigger("click");
-                    }
-                    break
+                // case "ertcBtn":
+                //     $(".pageTop").addClass("hidden");
+                //     pages[4].removeClass("hidden");
+                //     if ($("#hamButton").attr("aria-expanded") === "true") {
+                //         $("#hamButton").trigger("click");
+                //     }
+                //     break
                 case "payProcessBtn":
                     $(".pageTop").addClass("hidden");
                     pages[5].removeClass("hidden");
@@ -128,9 +128,9 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "footERTC":
+                case "footMeds":
                     $(".pageTop").addClass("hidden");
-                    $("#ertcPage").removeClass("hidden");
+                    $("#pharmPage").removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
