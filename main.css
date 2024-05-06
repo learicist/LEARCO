@@ -198,11 +198,11 @@ body {
     padding-top: 90px;
 }
 
-.topRow {
-    /* border: 1px solid red;
+/*.topRow {
+     border: 1px solid red;
     display: flex;
-    justify-content: center; */
-}
+    justify-content: center; 
+}*/
 
 .topDiv {
     /* width: 97vw; */
@@ -373,6 +373,13 @@ h3 {
     font-size: calc(6px + 0.35vw);
 }
 
+#legalPayProcessRow {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .funnelRow {
     align-items: center;
     display: flex;
@@ -465,7 +472,7 @@ h3 {
     }
 }
 
-/* THIRD ROW MAIN PAGE */]
+/* THIRD ROW MAIN PAGE */
 #thirdRowMain {
     display: flex;
     justify-content: center;
@@ -541,9 +548,9 @@ h3 {
 }
 
 @media screen and (max-width: 769px) {
-    #headshot {
-        /* width: 30% */
-    }
+    /*#headshot {
+         width: 30% 
+    }*/
 
     #welcomeQuoteDiv {
         margin-top: 35px;
@@ -808,9 +815,9 @@ h3 {
     font-size: calc(12px + 3vw);
 }
 
-.healthDescriptors {
-    /* font-size: calc(12px + 1.6vw); */
-}
+/*.healthDescriptors {
+     font-size: calc(12px + 1.6vw);
+} */
 
 
 /* ERTC PAGE */
