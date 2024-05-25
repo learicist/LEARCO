@@ -80,17 +80,18 @@
                         <a 
                             style="text-decoration: none;" 
                             class="active links visibleLinks" 
+                            id="bizProcessBtn"
+                            aria-current="page" 
+                            href="#">
+                                Process Automation
+                        </a>                        
+                        <a 
+                            style="text-decoration: none;" 
+                            class="active links visibleLinks" 
                             id="bizCapBtn"
                             aria-current="page" 
                             href="#">
                                 Business Capital
-                        </a>
-                        <a 
-                            style="text-decoration: none;" 
-                            class="active links visibleLinks" 
-                            id="empPayBtn"
-                            href="#">
-                                Employee Pay Anyday
                         </a>
                         <a 
                             style="text-decoration: none;" 
@@ -118,6 +119,15 @@
                                     id="healthBtn"
                                     href="#">
                                         Health Care Offerings
+                                </a>
+                            </li>
+                            <li class="dropdownList">
+                                <a 
+                                    style="text-decoration: none;" 
+                                    class="links dropdownLinks" 
+                                    id="empPayBtn"
+                                    href="#">
+                                        Employee Pay Anyday
                                 </a>
                             </li>
                             <!-- <li class="dropdownList">
@@ -297,6 +307,94 @@
         <!-- ====================================================================================================================
                                         PAGE BREAK   PAGE BREAK    PAGE BREAK    PAGE BREAK
         ====================================================================================================================== -->
+
+
+        <div class="container-fluid pageTop hidden" id="bizProcessPage">
+            <div class="row topRow" id="topRowBizProcess">
+                <div class="col-md-12 topDiv" id="topDivBizProcess" alt="One man showing another a laptop">
+                    <div class="heroDiv">
+                        <div class="row heroTextRow">
+                            <div class="heroTextDiv col-md-10" id="bizProcessPageHero">
+                                <h1 class="heroText">Business Process Automation</h1>
+                                <br>
+                                <h3>We automate business processes with no upfront costs and no neeed for internal IT resources</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TOPDIV -->
+            </div>
+            <!-- END TOPROW BIZProcess-->
+
+            <div class="row secondRow" id="secondRowBizProcess">
+                <div class="col-md-6 bizProcessDescriptors" id="bizProcessDescriptor1">
+                    <h4>
+                        Typically when Owners/CEOs/Founders bring us in, it's because they've been frustrated with the numbher of manual & repetitive processes in their business, and worry that human errors may be costing them revenue...
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row thirdRow" id="thirdRowBizProcess">
+                <div class="col-md-4 bizProcessDescriptors" id="bizProcessDescriptor2">
+                    <p style="padding-top: 20px;">
+                        Or they're worried that staff is not spending enough time on the high-value tasks and concerned that the current business processes aren't built to grow their business.
+                    </p>
+                </div>
+                <div class="col-md-2 bizProcessDescriptors" id="bizProcessDescriptor3">
+                    <!--EMPTY FOR SPACING-->
+                    <!-- <p>Lorem Ipsum</p> -->
+                </div>
+                <div class="col-md-4 bizProcessDescriptors" id="bizProcessDescriptor4">
+                    <p style="padding-top: 20px;">
+                        Are you experiencing any of that in your business?
+                    </p>
+                </div>
+            </div>
+
+            <div class="row fourthRow" id="fourthRowBizProcess">
+                <div class="col-md-8 formDiv hidden" id="formDivBizProcess">
+                    <p class="formTitle">Reach out now, and let's get you up and running today!</p>
+                    <ul id="contactBizProcessPage" class="contactForms"> 
+                        <form class="forms" action="https://formspree.io/f/mgebydjq" method="POST">
+                            <li>
+                                <input class="textbox" type="text" name="Name" placeholder="Name" required/>
+                            </li>
+                            <li>
+                                <input class="textbox" type="text" name="Email" placeholder="Email Address" required/>
+                            </li>
+                            <li>
+                                <input class="textbox" type="text" name="Phone" placeholder="Phone Number" required/>
+                            </li>
+                            <li>
+                                <textarea class="textbox messageBox" name="Message" type="text" placeholder="Message" required></textarea>
+                            </li>
+                            <button class="send" name="sendBtn" type="submit">Send</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <!--END FOURTH ROW BIZ PROCESS-->
+            
+            <div class="row fifthRow funnelRow" id="fifthRowBizProcess">
+                <div class="col-md-6 funnelDiv" id="bizProcessFunnelDiv">
+                    <a 
+                        target="_blank" 
+                        href="https://optimally.com/learcobusinessservices/"
+                        class="funnelBtn"
+                        id="bizCapFunnelBtn">Click Here to Get Started!
+                    </a>
+                </div> 
+            </div>
+            <!-- END FIFTH ROW BIZ PROCESS PAGE  -->
+
+        </div>
+        <!--END BIZ PROCESS PAGE-->
+
+
+        <!-- ====================================================================================================================
+                                        PAGE BREAK   PAGE BREAK    PAGE BREAK    PAGE BREAK
+        ====================================================================================================================== -->
+
 
         <div class="container-fluid pageTop hidden" id="bizCapPage">
             <div class="row topRow" id="topRowBiz">
@@ -917,9 +1015,9 @@
                             <a
                                 href="#"
                                 class="footNavLinks"
-                                id="footMeds"
+                                id="footBizProcess"
                                 style="text-decoration: none;">
-                                Prescription Coverage
+                                Process Automation
                             </a> 
                         </h4>
                         <h4 class="footNavLinkHouses">
@@ -935,9 +1033,9 @@
                             <a
                                 href="#"
                                 class="footNavLinks"
-                                id="footPayProcess"
+                                id="footMeds"
                                 style="text-decoration: none;">
-                                Payment Processing
+                                Prescription Coverage
                             </a> 
                         </h4>
                         <h4 class="footNavLinkHouses">

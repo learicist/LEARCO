@@ -87,6 +87,7 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
 }
 
 #dropdownMenu {
+    align-items: center;
     text-align: center;
     margin-top: -4px;
     padding: 2px 15px;
@@ -95,12 +96,15 @@ linear-gradient(135deg,rgb() 0%,rgb() 50%,rgb() 100%)
 
 .dropdownList {
     margin: 18px 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .dropdownLinks {
     border-radius: 5px;
     text-align: center;
-    padding: 5px 10px;
+    width: 15vw;
+    padding: 0.5vh 0;
     font-size: calc(10px + 0.5vw);
     font-family: "Poppins", sans-serif;
     white-space: nowrap;
@@ -583,6 +587,56 @@ h3 {
     }
 }
 
+/*BIZ PROCESS PAGE*/
+#topDivBizProcess {
+    background-image: url("https://res.cloudinary.com/learicist/image/upload/v1716659472/LEARCO/bizProcessHero.jpg");
+}
+
+#bizProcessPageHero {
+    margin-top: 25vh;
+}
+
+#thirdRowBizProcess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bizProcessDescriptors {
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#bizProcessDescriptor1 {
+    background-color: rgb(12, 59, 93);
+    color: white;
+}
+
+#bizProcessDescriptor1 h5 {
+    padding-top: 10px;
+}
+
+#bizProcessDescriptor2 {
+    font-size: calc(10px + 0.6vw);
+    padding-top: 10px;
+    background-color: rgb(33, 94, 172);
+    color: white;
+    border-radius: 15px;
+}
+
+#bizProcessDescriptor4 {
+    font-size: calc(10px + 0.8vw);
+    padding-top: 10px;
+    background-color: rgb(33, 94, 172);
+    color: white;
+    border-radius: 15px;
+} 
 
 
 /* BUSINESS CAPITAL PAGE */

@@ -20,8 +20,8 @@ $(document).ready(function() {
         location.reload();
     });
 
-    const pages = [$("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), $("#payProcessPage"), $("#pharmPage"), $("#bizConsultPage")];
-    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivPharm"), $("#formDivBizConsult")];
+    const pages = [ $("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), $("#payProcessPage"), $("#pharmPage"), $("#bizConsultPage"), $("#bizProcessPage")];
+    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivPharm"), $("#formDivBizConsult"), $("#formDivBizProcess")];
 
     //console.log(pages[0]);
 
@@ -85,6 +85,13 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
+                case "bizProcessBtn":
+                    $(".pageTop").addClass("hidden");
+                    pages[8].removeClass("hidden");
+                    if ($("#hamButton").attr("aria-expanded") === "true") {
+                        $("#hamButton").trigger("click");
+                    }
+                    break
                 
                 // HANDLE UNIQUE CASES FOR CLICK FROM BIZCON PAGE
                 case "consult_bizCapBtn":
@@ -114,9 +121,9 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "footPayProcess":
+                case "footBizProcess":
                     $(".pageTop").addClass("hidden");
-                    $("#payProcessPage").removeClass("hidden");
+                    $("#bizProcessPage").removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
