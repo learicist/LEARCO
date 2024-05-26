@@ -605,25 +605,29 @@ h3 {
 .bizProcessDescriptors {
     /* border: 1px solid black; */
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-family: "Poppins", sans-serif;
-    align-items: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
     padding: 20px;
 }
 
 #bizProcessDescriptor1 {
-    background-color: rgb(12, 59, 93);
-    color: white;
+    background-color: rgb(25, 178, 80);
+    color: rgb(12, 59, 93);
+    align-items: center;
+    text-align: center;
 }
 
-#bizProcessDescriptor1 h5 {
+#bizProcessDescriptor1 p {
     padding-top: 10px;
+    font-size: calc(10px + 1.2vw);
+    font-family: "Averia Libre", cursive;
 }
 
 #bizProcessDescriptor2 {
-    font-size: calc(10px + 0.6vw);
+    font-size: calc(10px + 1vw);
     padding-top: 10px;
     background-color: rgb(33, 94, 172);
     color: white;
@@ -631,11 +635,14 @@ h3 {
 }
 
 #bizProcessDescriptor4 {
-    font-size: calc(10px + 0.8vw);
+    font-size: calc(10px + 1vw);
     padding-top: 10px;
-    background-color: rgb(33, 94, 172);
+    background-color: rgb(12, 59, 93);
     color: white;
     border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    
 } 
 
 
