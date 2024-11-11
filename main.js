@@ -20,8 +20,11 @@ $(document).ready(function() {
         location.reload();
     });
 
-    const pages = [ $("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), $("#payProcessPage"), $("#pharmPage"), $("#bizConsultPage"), $("#bizProcessPage")];
-    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivPharm"), $("#formDivBizConsult"), $("#formDivBizProcess")];
+    const pages = [ $("#bizCapPage"), $("#empPayPage"), $("#rdTaxPage"), $("#healthPage"), $("#ertcPage"), 
+        $("#payProcessPage"), $("#pharmPage"), $("#bizConsultPage"), $("#bizProcessPage")];
+
+    const forms = [$("#formDivBiz"), $("#formDivEmpPay"), $("#formDivRdTax"), $("#formDivHealth"), 
+        $("#formDivErtc"), $("#formDivPayProcess"), $("#formDivPharm"), $("#formDivBizConsult"), $("#formDivBizProcess")];
 
     //console.log(pages[0]);
 
@@ -71,13 +74,13 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "pharmBtn":
-                    $(".pageTop").addClass("hidden");
-                    pages[6].removeClass("hidden");
-                    if ($("#hamButton").attr("aria-expanded") === "true") {
-                        $("#hamButton").trigger("click");
-                    }
-                    break
+                // case "pharmBtn":
+                //     $(".pageTop").addClass("hidden");
+                //     pages[6].removeClass("hidden");
+                //     if ($("#hamButton").attr("aria-expanded") === "true") {
+                //         $("#hamButton").trigger("click");
+                //     }
+                //     break
                 case "bizConsultBtn":
                     $(".pageTop").addClass("hidden");
                     pages[7].removeClass("hidden");
@@ -104,7 +107,6 @@ $(document).ready(function() {
                         }
                         console.log("test");
                     }, 1500);
-                    
                     break
             }
         }
@@ -135,9 +137,9 @@ $(document).ready(function() {
                         $("#hamButton").trigger("click");
                     }
                     break
-                case "footMeds":
+                case "footTax":
                     $(".pageTop").addClass("hidden");
-                    $("#pharmPage").removeClass("hidden");
+                    $("#rdTaxPage").removeClass("hidden");
                     if ($("#hamButton").attr("aria-expanded") === "true") {
                         $("#hamButton").trigger("click");
                     }
